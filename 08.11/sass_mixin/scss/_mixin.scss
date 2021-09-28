@@ -1,0 +1,11 @@
+@mixin button($wid:80px, $ht:30px, $bgColor:gray, $color:#fff, $fontSize:12px){
+    display:block; 
+    width:$wid; 
+    height:$ht; 
+    background-color:$bgColor; 
+    text-align:center; 
+    color:$color; 
+    font-size:$fontSize; 
+    line-height:30px; 
+    border-radius:$ht/2; 
+}

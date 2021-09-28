@@ -1,0 +1,56 @@
+@charset "utf-8";
+@import 'reset.css';
+
+div{
+    width: 100%;
+    height: 100vh;
+}
+
+div span{
+    color: #fff;
+}
+
+.box1{
+    background-color: pink;
+}
+
+.box2 {
+    background-color: orange;
+}
+
+.box2 span{
+    font-size: 300px;
+}
+
+.box3{
+    background-color: aqua;
+}
+
+.box3 span{
+    font-size:10vh; 
+}
+
+.box4{
+    background-color: orangered;
+}
+
+.box5{
+    background-color: violet;
+}
+
+/* 
+body 안에서 직계자식의 블록요소는 높이값 100%가 적용이 안됨 
+
+풀스크린 만드는 공식 
+width:100%; 
+height:100vh; 
+
+너비값을 100%가 아닌 100vw로 지정하면 세로 스크롤이 있는 경우 가로 스크롤이 생성됨 
+- 100vw는 스크롤바 너비를 제외한 경우로 계산 
+- 100%는 세로 스크롤바를 포함한 안쪽 너비 
+- 100vw는 세로 스크롤바를 제외한 안쪽 너비 
+
+만약 공통의 태그일 경우 공통의 css속성들은 
+태그 선택자로 공통으로 묶어줄수 있음 
+
+*/

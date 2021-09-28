@@ -1,0 +1,61 @@
+@charset 'utf-8';
+@import 'reset.css';
+
+#box0{
+    width: 100%;
+    padding: 180px 0 150px;
+    background: #fff;
+}
+
+#box0 .inner{
+    width: 1180px;
+    margin: 0 auto;
+    position: relative;
+}
+
+#box0 .inner h1{
+    font: bold 22px/1 'arial';
+    color: #555;
+    text-align: center;
+}
+
+#box0 .inner .wrap{
+    width: 100%;
+    background-color: #555;
+    margin: 40px auto;
+}
+
+#box0 .inner .wrap article{
+    width: calc(880px / 3);
+    float: left;
+    background-color: #fff;
+    margin-left: 100px;
+    padding: 15px;
+    position: relative;
+}
+
+#box0 .inner .wrap article h2{
+    font: bold 18px/1 'arial';
+    color: #555;
+}
+
+#box0 .inner .wrap article p{
+    font: 14px/1 'arial';
+    color: #777;
+}
+
+#box0 .inner .wrap article a{
+    display: block;
+    width: 40px;
+    height: 40px;
+    background: #ddd;
+    border-radius: 50%;
+    font-size: 20px;
+    line-height: 40px;
+    text-align: center;
+    color: #fff;
+    margin: 0 auto;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}

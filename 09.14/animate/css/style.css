@@ -1,0 +1,13 @@
+@charset 'utf-8'; 
+@import 'reset.css'; 
+
+.box1{
+    width:200px; 
+    height:200px; 
+    background:aqua; 
+}
+.box2{
+    width:200px; 
+    height:200px; 
+    background:pink; 
+}

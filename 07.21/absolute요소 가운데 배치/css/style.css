@@ -1,0 +1,27 @@
+@charset "utf-8";
+/* reset */
+*{ margin: 0; padding: 0; }
+ul, li, ol{ list-style: none; }
+a{ text-decoration: none; }
+
+.wrap{
+    width: 500px;
+    height: 500px;
+    background: pink;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -250px;
+    margin-top: -250px;
+}
+
+.box{
+    width: 100px;
+    height: 100px;
+    background: lightgreen;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -50px;
+    margin-top: -50px;
+}

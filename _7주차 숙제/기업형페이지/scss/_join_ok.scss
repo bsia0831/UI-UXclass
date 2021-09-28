@@ -1,0 +1,169 @@
+@keyframes fadein_name{
+    0%{
+        transform: scale(1.4);
+    }
+
+    30%{
+        transform: scale(1);
+    }
+
+    60%{
+        transform: scale(1.4);
+    }
+
+    100%{
+        transform: scale(1);
+    }
+}
+
+.join_ok {
+    .inner {
+        padding: 0 300px;
+        min-height: 500px;
+
+        h1 {
+            position: absolute;
+            left: 80px;
+        }
+
+        form {
+            fieldset {
+                .wrap {
+                    width: 100%;
+                    padding-top: 50px;
+                    padding-left: 90px;
+
+                    article {
+                        width: calc((100% - 90px) / 3);
+                        float: left;
+                        text-align: center;
+                        padding: 0 10px;
+                        box-sizing: border-box;
+                        margin-top: 30px;
+
+                        &:nth-of-type(3) .fa-check-circle {
+                            color: #e7dd54;
+                        }
+
+                        &:nth-of-type(3) strong{
+                            color: #e7dd54;
+                        }
+
+                        &:nth-of-type(-n+2) strong {
+                            color: #aaa;
+                        }
+
+                        &:last-child {
+                            margin-right: 0;
+                        }
+
+                        a {
+                            display: block;
+                            width: 50px;
+                            height: 50px;
+                            font-size: 20px;
+                            line-height: 50px;
+                            color: #999;
+                            margin: 0 auto 10px;
+                        }
+                    }
+
+                    span .fa-chevron-right {
+                        margin-top: 50px;
+                        float: left;
+                    }
+                }
+
+                .ok{
+                    width: 100%;
+
+                    h2{
+                        font-size: 20px;
+                        font-weight: 400;
+                        color: #444;
+                        margin-top: 100px;
+                        padding-bottom: 20px;
+                        border-bottom: 2px solid #222;
+                    }
+
+                    .txt{
+                        width: 100%;
+                        padding: 80px 0;
+                        text-align: center;
+                        border-bottom: 1px solid #aaa;
+                        p{
+                            animation: fadein_name 2s ease;
+                        }
+                    }
+
+                    ul{
+                        width: 100%;
+                        text-align: center;
+                        padding: 50px 0;
+                    }
+
+                    ul{
+                        input[type="button"]{
+                            width:150px; 
+                            height:40px; 
+                            font-size: 16px;
+                            font-weight: bold;
+                            line-height: 35px;
+                            color:#444; 
+                            border:1px solid #444; 
+                            border-radius:10px; 
+                            background:#fff; 
+                            margin: 10px;
+                        }
+
+                        input[type="button"]:hover{
+                            color: #fff;
+                            background: #e7dd54;
+                            cursor: pointer;
+                            border-color: #e7dd54;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// tablet-----------------------------
+@media screen and (max-width:$tablet){
+    .join_ok {
+        .inner {
+            padding: 0 30px;
+    
+            h1 {
+                left: 30px;
+            }
+    
+            form {
+                fieldset {
+                    .wrap {
+                        padding-left: 10px;
+    
+                        article {
+                            width: calc((100% - 20px) / 3);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+// mobile-----------------------------
+@media screen and (max-width:$mobile){
+	.join_ok{
+		.inner{
+			padding: 20px;
+	
+			h1{
+				left: 20px;
+			}
+		}
+	}
+}

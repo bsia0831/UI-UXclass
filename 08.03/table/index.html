@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table </title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- 
+        table은 기본적으로 줄(row)와 행(column)으로 구성되어있음 
+
+        테이블 요소 태그 - tr th td 
+
+        셀병합 
+        1. 가로칸을 합칠 때는 합쳐지는 칸은 삭제후 
+           시작칸에 colspan="합쳐지는 칸수" 
+        2. 세로칸을 합칠 때는 합쳐지는 칸은 삭제 후 
+           시작칸에 rowspan="합쳐지는 칸수" 
+        3.가로,세로칸 모두 합칠 때는 합쳐지는 칸 가로세로 모두 삭제후 시작칸에 rowspan, colspan 을 모두 적용 
+
+     -->
+    <table border="1">
+        <tr>
+            <th>제목1</th>
+            <th>제목2</th>     
+            <th>제목3</th>
+            <th>제목4</th>
+            <th>제목5</th>      
+        </tr>
+        <tr>
+            <td colspan="2">내용1,2</td>             
+            <td>내용3</td>
+            <td>내용4</td>
+            <td>내용5</td>
+        </tr>
+        <tr>
+            <td>내용6</td>
+            <td colspan="2" rowspan="2">내용7,8,12,13</td>
+             
+            <td>내용9</td>
+            <td>내용10</td>
+        </tr>
+        <tr>
+            <td>내용11</td>
+            
+             
+            <td>내용14</td>
+            <td rowspan="3">내용15,20,25</td>
+        </tr>
+        <tr>
+            <td>내용16</td>
+            <td>내용17</td>
+            <td>내용18</td>
+            <td>내용19</td>
+             
+        </tr>
+        <tr>
+            <td>내용21</td>
+            <td>내용22</td>
+            <td>내용23</td>
+            <td>내용24</td>
+             
+        </tr>
+    </table>
+<!-- 
+    thead - 테이블의 행 그룹 중 제목 셀그룹 
+            테이블 내에 한번 사용 
+    tbody - 테이블의 본문 행 
+    tfoot - 레코드 내용의 소계, 합계 등 정보에      해당하는 푸터 행
+            테이블 내에 한번 사용 
+
+    colgroup>col - 표의 열을 묶는 그룹 
+ -->
+    <table class="tableA" border="1" summary="A반의 국어,수학,과학,영어 시험성적표">
+        <caption>A반의 시험성적</caption>
+        <!-- 
+        <colgroup>
+            <col span="2" style="background:pink;">
+            <col span="2" style="background:lightblue;">            
+        </colgroup> -->
+        <thead>
+            <tr>
+                <th scope="col">국어</th>
+                <th scope="col">수학</th>
+                <th scope="col">과학</th>
+                <th scope="col">영어</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>70</td>
+                <td>80</td>
+                <td>90</td>
+                <td>67</td>
+            </tr>
+            <tr>
+                <td>80</td>
+                <td>75</td>
+                <td>98</td>
+                <td>89</td>
+            </tr>
+        </tbody>       
+    </table>
+    <!-- 
+        scope 
+        - 제목셀과 내용셀의 관계를 지정 
+        - 데이터의 의미와 관계를 파악하기 쉽게 만들어줌 
+        - th 에 scope속성을 지정하고 col/row
+        - 해당 셀이 열의 제목인지 행의 제목인지 알수 있다 
+     -->
+
+     <!-- 회원정보 -->
+     <table class="tableB" border="1" summary="회원의 이름, 성별,나이, 거주지 정보">
+        <caption class="h">회원정보</caption>
+        <tr>
+            <th scope="row">이름</th>
+            <td>홍길동</td>
+        </tr>
+        <tr>
+            <th scope="row">성별</th>
+            <td>남</td>
+        </tr>
+        <tr>
+             <th scope="row">나이</th>
+             <td>20</td>
+        </tr>
+        <tr>
+            <th scope="row">거주지</th>
+            <td>서울</td>
+        </tr>
+     </table>
+
+<!-- 
+    복잡하게 병합된 테이블의 경우 
+    id, headers
+    th는 id를 설정 
+    td는 headers를 사용
+
+ -->
+
+     <!-- 환율정보  -->
+     <table class="tableC" border="1" summary="당월 결제하실 회차, 원금,혜택금액, 환율,수수료 정보표">
+        <caption>당월 결제 금액</caption>
+        <thead>
+            <tr>
+                <th colspan="5" id="a1">당월 결제하실 금액</th>
+            </tr>
+            <tr>
+                <th id="b1">회차</th>
+                <th id="b2">원금</th>
+                <th id="b3">혜택금액</th>
+                <th id="b4">환율</th>
+                <th id="b5">수수료</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td headers="a1 b1">100</td>
+                <td headers="a1 b2">200</td>
+                <td headers="a1 b3">300</td>
+                <td headers="a1 b4">400</td>
+                <td headers="a1 b5">500</td>
+            </tr>
+            <tr>
+                <td headers="a1 b1">600</td>
+                <td headers="a1 b2">700</td>
+                <td headers="a1 b3">800</td>
+                <td headers="a1 b4">900</td>
+                <td headers="a1 b5">1000</td>
+            </tr>
+        </tbody>
+     </table>
+</body>
+</html>

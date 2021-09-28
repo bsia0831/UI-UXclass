@@ -1,0 +1,95 @@
+@charset 'utf-8'; 
+
+.join .inner .wrap article:nth-of-type(1) .fa-clipboard-list{
+    color: #aaa;
+}
+
+.join .inner .wrap article:nth-of-type(3) .fa-check-circle{
+    color: #111;
+}
+
+.join .inner .wrap article:nth-of-type(3) strong{
+    color: #111;
+}
+
+.join .inner .wrap article:nth-of-type(1) strong{
+    color: #aaa;
+}
+
+.join .inner .ok{
+    width: 100%;
+}
+
+.join .inner .ok h2{
+    font-size: 20px;
+    font-weight: 400;
+    color: #444;
+    margin-top: 100px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #222;
+}
+
+.join .inner .ok .txt{
+    width: 100%;
+    padding: 100px 0;
+    text-align: center;
+    border-bottom: 1px solid #aaa;
+}
+
+.join .inner .ok ul{
+    width: 100%;
+    text-align: center;
+    padding: 50px 0;
+}
+
+
+/* tablet ----------------------------------------------- */
+@media screen and (max-width:1179px){
+    .join .inner table tr th{
+        width: 15%;
+        padding: 20px;
+    }
+
+    .join .inner table tr td{
+        width: auto;
+        padding: 20px;
+    }
+    
+    .join input[type="text"], .join input[type="password"]{
+        width: 100%;
+    }
+    
+    .join .inner table tr:nth-of-type(5) input[type="text"]{
+        width:calc( 100% - 150px);
+    }
+
+    .join select{
+        width:120px; 
+    }
+}
+
+/* mobile ----------------------------------------------- */
+@media screen and (max-width:539px){
+    .join .inner table tr th{
+        width:10%;         
+        padding:20px 10px;     
+        font-size:14px;    
+    }
+    
+    .join .inner table tr td{        
+        padding:20px 10px; 
+        font-size:14px; 
+    }
+    
+    .join .inner table tr:nth-of-type(5) input[type="text"]{
+        width:100%; margin-bottom:5px; 
+    }
+
+    .join select{
+        width:120px; 
+    }
+    
+    .join .inner table tr:nth-of-type(3) label{
+        display:block;
+    }
+}

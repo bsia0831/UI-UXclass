@@ -1,0 +1,51 @@
+@charset 'utf-8';
+@import 'reset.css';
+
+/* 
+flex 방식 
+display : 
+    flex - 자신은 블록속성을 유지하면서 자식요소에 flex 환경 설정 
+    inline-flex - 자신을 인라인 속성으로 변경하면서 자식요소에 flex 환경 설정 
+flex-direction 
+    row - flex의 기본축을 가로로 지정 
+    column - flex의 기본축을 세로로 지정 
+    row-reverse - 자식요소의 콘텐츠를 가로 역순으로 정렬 
+    column-reverse - 자식요소의 콘텐츠를 세로 역순으로 정렬 
+flex-wrap 
+    nowrap - 자식 요소의 줄바꿈을 하지 않음 
+    wrap - 자식요소의 줄 바꿈을 함 
+flex-flow 
+    flex-direction과 flex-wrap속성의 축약문
+
+자식요소 정렬하는 방법
+justify-content: 기본축으로 정렬하기
+align-items: 
+align-content
+- flex-start: 자식요소를 시작방향으로 정렬하기
+- flex-end: 자식요소를 종료방향으로 정렬하기
+- center: 자식요소를 가운데방향으로 정렬하기
+- space-between:자식요소의 좌우사이간격을 균일하게 정렬하기
+                자식요소들을 부모요소의 양끝으로 배치한뒤, 자식요소간격을 균이일하게 배치
+- space-around: 자식요소의 기본 측 방향으로 주위간격을 균일하게 배치, 자식요소를 부모요소의 양끝에 배치하되 안쪽간격의 크기만큼 동일하게 양끝에도 여백 지정
+- spce-evenly: 자식 요소를 균일하게 배치하고 양끝의 간격만큼 여백을 적용, 자식 요소의 배치와 양끝에 중첩된 간격만큼 여백을 적용 
+*/
+main{
+    width: 100%;
+    height: 100vh;
+    background: lightcyan;
+}
+
+section{
+    border: 10px solid blue;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+
+}
+
+section article{
+    width: 100px;
+    height: 100px;
+    background: aqua;
+    border: 1px solid #000;
+}

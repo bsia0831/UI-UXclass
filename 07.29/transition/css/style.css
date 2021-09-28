@@ -1,0 +1,58 @@
+@charset 'utf-8';
+@import 'reset.css';
+
+/* 
+transition
+-정해진 시간동안 요소의 속성값을 부드럽게 변화시기는 속성
+
+적용할 수 있는 속성
+위치 - top, left, right, bottom
+크기 - width, height
+박스 속성 - margin, padding
+테두리 속성 - border-width, border-radius, border-color
+색상 - color, background-color
+투명도 - opacity
+변환속성 - transform
+
+transirtion-delay: 이벤트 발생 후 몇 초후에 재생할지 지정
+transition-duration: 몇 초 동안 재생할지 지정
+transition-property: 어떤 속성 변형할지 지정
+transition-timing-function: 수치 변형 함수 지정 -> 가속도
+
+linear: 처음부터 끝까지 일정한 속도
+ease: 천천히 시작되어 그 다음에는 빨라지고 마지막은 다시 느려짐
+ease-in: 전환효과가 천천히 시작
+ease-out: 전환효과가 천천히 끝남
+ease-in-out: 전환효과가 천천히 시작해서 천천히 끝남
+cubic-bezir(): 원하는 속도로 설정가능(구글링 하여 사용)
+
+transition: property duration timing-function delay 순으로 작성
+*/
+
+section{
+    width: 100%;
+    padding: 100px 0;
+    background: #efefef;
+    position: relative;
+}
+
+section div{
+    width: 100px;
+    height: 100px;
+    background: orange;
+    position: absolute;
+    left: 0;
+    top: 100px;
+    transition: all 2s;
+}
+
+section:hover{
+    background: pink;
+}
+
+section:hover div{
+    background: lightgreen;
+    width: 200px;
+    height: 200px;
+    left: 500px;
+}

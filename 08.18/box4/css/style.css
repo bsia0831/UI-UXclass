@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+ul, ol, li {
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+.wrap::after {
+  content: '';
+  display: block;
+  clear: both; }
+
+.hidden {
+  position: absolute;
+  top: -9999px;
+  opacity: 0; }
+
+#box4 {
+  width: 100%;
+  padding: 100px 0 0;
+  background-color: #fff; }
+  #box4 .inner {
+    width: 1180px;
+    margin: 0 auto;
+    position: relative; }
+    #box4 .inner .wrap {
+      width: 100%; }
+      #box4 .inner .wrap article {
+        width: 490px;
+        position: relative; }
+        #box4 .inner .wrap article:nth-of-type(1) {
+          padding: 40px 0;
+          float: left; }
+          #box4 .inner .wrap article:nth-of-type(1) p {
+            font: 18px/1.1 'arial';
+            color: #777; }
+        #box4 .inner .wrap article:nth-of-type(2) {
+          padding: 40px 0;
+          float: right; }
+          #box4 .inner .wrap article:nth-of-type(2) h2 {
+            font: bold 18px/1 'arial';
+            color: #555;
+            margin-bottom: 10px;
+            position: relative; }
+          #box4 .inner .wrap article:nth-of-type(2) p {
+            font: 14px/1.2 'arial';
+            color: #888;
+            margin-bottom: 20px;
+            position: relative; }
+          #box4 .inner .wrap article:nth-of-type(2) .pic {
+            width: 160px;
+            height: 160px;
+            background: #aaa;
+            position: absolute;
+            right: 40px;
+            top: -30px; }
+          #box4 .inner .wrap article:nth-of-type(2)::before {
+            content: '';
+            display: block;
+            width: 70%;
+            height: 100%;
+            background-color: #eee;
+            position: absolute;
+            bottom: 0;
+            right: 0; }
+          #box4 .inner .wrap article:nth-of-type(2) a.btn {
+            display: block;
+            width: 100px;
+            height: 30px;
+            border-radius: 15px;
+            border: 1px solid #ccc;
+            font: 12px/30px 'arial';
+            text-align: center;
+            color: #888;
+            position: relative; }
+
+/*# sourceMappingURL=style.css.map */

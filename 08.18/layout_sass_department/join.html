@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원가입</title>
+    <script src="https://kit.fontawesome.com/6e561f56c7.js" crossorigin="anonymous"></script>
+	<script defer src="./custom.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header id="header_sub">
+		<div class="inner">
+			<h1><a href="index.html">DCODELAB</a></h1>
+
+			<nav class="menuWeb">
+				<ul id="gnb">
+					<li><a href="department.html">DEPARTMENT</a></li>
+					<li><a href="youtube.html">YOUTUBE</a></li>
+					<li><a href="community.html">COMMUNITY</a></li>
+					<li><a href="gallery.html">GALLERY</a></li>
+					<li><a href="location.html">LOCATION</a></li>
+				</ul>
+				
+				<ul class="util">
+					<li><a href="#">Contact</a></li>
+					<li><a href="#">Login</a></li>
+					<li><a href="#">Help</a></li>
+					<li><a href="join.html">Join</a></li>
+					<li><a href="#">Sitemap</a></li>
+				</ul>
+			</nav>
+
+			<a href="#" class="btnCall">
+				<span>메뉴호출</span>
+			</a>
+
+			<nav class="menuMo">
+				<h1>
+					<a href="index.html">DCODELAB</a>
+					<span>UI/UX DEVELOPMENT INSTITUTE</span>
+				</h1>
+
+				<ul id="gnbMo">
+					<li><a href="department.html">DEPARTMENT</a></li>
+					<li><a href="youtube.html">YOUTUBE</a></li>
+					<li><a href="community.html">COMMUNITY</a></li>
+					<li><a href="gallery.html">GALLERY</a></li>
+					<li><a href="location.html">LOCATION</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header> 
+
+    <section class="content join">
+        <div class="sub_visual"></div>
+        <div class="inner">
+            <h1>JOIN<span>회원가입</span> </h1>
+            <!-- 서브페이지 컨텐츠 들어가는 부분 -->
+			<form action="/" method="post">
+				<fieldset>
+					<legend class="hidden">회원가입양식폼</legend>
+
+					<h2>
+						<label for="terms">Terms & Policy</label>
+					</h2>
+					<textarea name="terms" id="terms" cols="30" rows="10">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet aspernatur quam velit beatae, adipisci expedita nam. Laboriosam nostrum debitis animi modi sunt dolor rem, error neque eaque quos nihil facilis veritatis vel explicabo? Magni facere doloribus culpa cum fugiat asperiores aut molestiae voluptatibus harum architecto! Illo asperiores eligendi ipsam aspernatur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, quaerat esse aut id excepturi quod ullam at, ut exercitationem temporibus, ipsum architecto eligendi. Facilis magnam inventore mollitia incidunt, est, repellat iusto nemo non doloremque ex, doloribus molestiae officia totam velit enim fuga voluptatibus iste rerum ab ratione eos praesentium libero sed. Ipsum, inventore optio omnis odit amet sint modi facere voluptatum ullam vitae iusto provident voluptates pariatur quidem ut consequatur architecto incidunt exercitationem qui, accusamus quod placeat, dolore mollitia magni! Autem quaerat vel dignissimos recusandae maiores fuga optio eligendi hic, rem non et ea. Perferendis distinctio ex fugit ipsum molestias. 
+					</textarea>
+					<div class="agreement">
+						<input type="checkbox" name="agree" id="agree">
+						<label for="agree">약관에 동의합니다.</label>
+					</div>
+
+					<h2>MEMBER INFORMATION</h2>
+					<table summary="회원의 아이디, 비밀번호, 성벼르 취미 입력양식폼">
+						<caption class="hidden">회원정보 입력양식 테이블</caption>
+						<tr>
+							<th scope="row"><label for="userid"></label>USER ID</th>
+							<td>
+								<input type="text" name="userid" id="userid" placeholder="아이디를 입력해주세요" required>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row"><label for="pwd"></label>PASSWORD</th>
+							<td>
+								<input type="password" name="pwd" id="pwd" placeholder="비밀번호를 입력해주세요" required>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row"><label for="pwd2"></label>RE PASSWORD</th>
+							<td>
+								<input type="password" name="pwd2" id="pwd2" placeholder="재입력 입력해주세요" required>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">HOBBY</th>
+							<td>
+								<label for="reading">
+									<input type="checkbox" name="hobby" id="reading" value="reading">READING
+								</label>
+								<label for="music">
+									<input type="checkbox" name="hobby" id="music" value="musci">MUSIC
+								</label>
+								<label for="game">
+									<input type="checkbox" name="hobby" id="game" value="game">GAME
+								</label>
+								<p class="hobbyTxt">취미를 선택해주세요.</p>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">GENDER</th>
+							<td>
+								<label for="male">
+									<input type="radio" name="gender" id="male" value="male">MALE
+									</label>
+								<label for="female">
+									<input type="radio" name="gender" id="female" value="female">FEMALE
+								</label>
+								<p class="genderTxt">성별을 선택해주세요.</p>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row"><label for="email">E-MAIL</label></th>
+							<td>
+								<input type="text" name="email" id="email" placeholder="이메일주소를 입력해주세요.">
+								<select name="company" id="company">
+									<option value="naver">@naver.com</option>
+									<option value="nate">@nate.com</option>
+									<option value="daum">@daum.net</option>
+								</select>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row"><label for="comments">COMMENTS</label></th>
+							<td>
+								<textarea name="comments" id="comments" cols="30" rows="10" placeholder="코멘트를 입력해 주세요."></textarea>
+							</td>
+						</tr>
+						<tr>
+							<th colspan="2">
+								<input type="reset" value="CANCLE">
+								<input type="submit" value="SUBMIT">
+							</th>
+						</tr>
+					</table>
+				</fieldset>
+			</form>
+
+
+        </div>
+    </section>
+
+    <footer id="footer_sub">
+		<div class="inner">
+			<h1>DCODELAB</h1>
+
+			<ul>
+				<li><a href="#">Policy</a></li>
+				<li><a href="#">Terms</a></li>
+				<li><a href="#">Customer</a></li>
+				<li><a href="#">Contact Us</a></li>
+			</ul>
+
+			<address>
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, earum. <br>
+				TEL:032-700-1234
+			</address>
+
+			<p>20121 DCODELAB &copy; copyright all right reserved.</p>
+		</div>
+	</footer>
+
+</body>
+</html>

@@ -1,0 +1,99 @@
+@charset 'utf-8';
+
+$tablet:1179px;
+$mobile:539px;
+
+@import "reset.scss";
+
+@mixin title($fontSize:24px, $color:#555, $align:center, $mb:50px) {
+    font: bold $fontSize/1 'arial';
+    color: $color;
+    text-align: $align;
+    margin-bottom: $mb;
+}
+
+
+
+/*header ------------------------------------------------*/
+#header {
+    width: 100%;
+    border-bottom: 1px solid #ddd;
+
+    .inner {
+        width: 1180px;
+        height: 120px;
+        margin: 0 auto;
+        position: relative;
+
+        >h1 {
+            position: absolute;
+            left: 0;
+            bottom: 15px;
+
+            a {
+                font: bold 24px/1 'arial';
+                color: #444;
+            }
+        }
+
+        .menuWeb {
+            #gnb {
+                position: absolute;
+                bottom: 0;
+                right: 0;
+
+                &::after {
+                    content: '';
+                    display: block;
+                    clear: both;
+                }
+
+                li {
+                    float: left;
+
+                    a {
+                        display: block;
+                        padding: 20px 40px;
+                        color: #555;
+                        font: bold 15px/1 'arial';
+                        transition: 0.5s;
+                    }
+
+                    &:hover a {
+                        background: #555;
+                        color: #fff;
+                    }
+                }
+            }
+
+            .util {
+                position: absolute;
+                top: 20px;
+                right: 0px;
+
+                &::after {
+                    content: '';
+                    display: block;
+                    clear: both;
+                }
+
+                li {
+                    float: left;
+
+                    a {
+                        display: block;
+                        font: 12px/1 'arial';
+                        color: #999;
+                        padding: 0 10px;
+                        margin-left: 40px;
+                    }
+
+                    &:last-child{
+                        margin-right: 30px;
+                    }
+                }
+            }
+        }
+        
+    }
+}

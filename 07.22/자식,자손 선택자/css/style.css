@@ -1,0 +1,15 @@
+@charset "utf-8";
+@import 'reset.css';
+
+.group>div{
+    border: 1px solid red;
+
+}
+
+/* 
+자손 선택자 
+-- 자식, 손자, 증손자까지 모두 포괄한 개념 
+
+자식 선택자(꺽쇠로 구분)
+-- 자기를 기준으로 지계자식만 나타내는 개념 
+*/

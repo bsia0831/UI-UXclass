@@ -1,0 +1,104 @@
+@charset "utf-8";
+@import 'reset.css';
+
+/* 
+id: 페이지 내에서 중요한 컨텐츠에 고유의 이름을 부여해서 주소값을 설정
+- 주로 개발요소를 빠르게 탐색할때 쓰임
+- 동일한 아이디값을 중복설정 불가
+
+class
+- 단지 구분점을 줘서 스타일을 주기위한 선택자
+- 같은 클래스명이 한페이지 내에서 복수개 등록 가능
+
+margin역상속 
+- 블록요소 부모태그안에 첫번째 자식 블록요소에 margin-top을 적용하면 해당 margin값이 부모요소에 역상속
+해결방법: 부모블로요소에 border값 적용(비추) / 부모태그 안쪽으로 padding-top을 적용
+*/
+
+/* news */
+#news{
+    width: 100%;
+    padding: 200px 0;
+}
+
+#news .inner{
+    width: 1180px;
+    margin: 0px auto;
+}
+
+#news .inner h1{
+    font: bold 24px/1 'arial';
+    color: #333;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#news .inner .wrap{
+    width: 100%;
+}
+
+#news .inner .wrap article{
+    width: 280px;
+    height: 300px;
+    background: #bbb;
+    float: left;
+    margin-right: 20px;
+}
+
+#news .inner .wrap article:last-child{
+    margin-right: 0px;
+}
+
+/* brand */
+#brand{
+    width:100%; 
+    padding:200px 0px;
+    background-color:#eee;  
+}
+
+#brand .inner{
+    width:1180px; 
+    margin:0 auto; 
+}
+
+#brand .inner h1{
+    font:bold 24px/1 'arial'; 
+    color:#333; 
+    text-align:center; 
+    margin-bottom:30px; 
+}
+
+#brand .inner .wrap{
+    width:100%; 
+}
+
+#brand .inner .wrap article:nth-of-type(1){
+    width:380px; 
+    height:620px; 
+    background-color:#888; 
+    margin-right:20px;   
+    float:left;  
+}
+
+#brand .inner .wrap article:nth-of-type(2){
+    width:380px; 
+    height:300px; 
+    background-color:#888; 
+    margin-right:20px; 
+    float:left; 
+}
+
+#brand .inner .wrap article:nth-of-type(3){
+    width:380px; 
+    height:300px; 
+    background-color:#888; 
+    float:left; 
+}
+
+#brand .inner .wrap article:nth-of-type(4){
+    width:780px; 
+    height:300px;
+    background-color:#888; 
+    float:left; 
+    margin-top:20px; 
+}

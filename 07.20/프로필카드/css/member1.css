@@ -1,0 +1,17 @@
+body{
+    background-color:lightcyan; 
+}
+
+.wrap .profile .pic{
+    background-image:url(../img/member1.jpg);
+    box-shadow:5px 15px 30px rgba(0,255,255,0.3);
+}
+
+.wrap .profile a{
+    background:linear-gradient(45deg, #78e8fc, #80c7f0);
+    box-shadow:5px 10px 20px rgba(120,232,252,0.4);
+}
+
+.wrap .others a:nth-of-type(1){
+    opacity:1; 
+}

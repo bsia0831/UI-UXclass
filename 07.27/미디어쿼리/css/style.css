@@ -1,0 +1,53 @@
+@charset 'utf-8';
+@import 'reset.css';
+
+/* 
+미디어쿼리 mediaquery
+- 특정 브라우저 폭을 지정해서 css구문을 입력하면 해당 브라우저 폭에서는 미디어 쿼리 안쪽의 구문이 기존의 css구문을 덮어씀
+
+속성값이 같다면 생략가능
+속성 추가 가능
+
+미디어 쿼리 구간안에서 전체 너비값은 총 합이 100%가 되도록 작성
+- 고정 px를 %로 바꾼다
+
+원본의 css구문을(태그경로)을 미디어쿼리 구간에서도 동일하게 써2야함
+#header .inner #gnb
+
+미디어쿼리 구문 쓰는 방법
+--원본 css 구문
+@media screen and (max-width: 700px){
+    //덮어쓸 css 구문
+    #header .inner #gnb{ }
+}
+
+* 우선순위
+max-width (웹화면 우선시)
+원본 css 
+태블릿 적용 css
+모바일 적용 css
+
+*/
+
+#box{
+    width: 300px;
+    height: 300px;
+    background: pink;
+    margin: 100px auto;
+}
+
+@media screen and (max-width: 900px){
+    #box{
+        width: 90%;
+        height: 700px;
+        background: aqua;
+    }
+}
+
+@media screen and (max-width: 400px){
+    #box{
+        height: 500px;
+        background: violet;
+        border: 5px solid #aaa;
+    }
+}

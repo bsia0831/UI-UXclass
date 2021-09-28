@@ -1,0 +1,107 @@
+@charset 'utf-8'; 
+@import 'reset.css'; 
+
+main{
+    width:100%; 
+    height:100vh; 
+    background:linear-gradient(45deg, purple, hotpink);
+}
+
+main header{
+    width:100%; 
+    border-bottom:1px solid #888; 
+    position:absolute; 
+    top:0; 
+    left:0; 
+    padding:5vh 5vw; 
+    z-index:2; 
+}
+ 
+main header h1{
+    font:bold 24px/1 'arial'; 
+    color:#fff; 
+    position:absolute; 
+    left:6vw; 
+    top:50%; 
+    transform:translateY(-50%); 
+}
+
+main header #gnb{
+    position:absolute; 
+    top:50%; 
+    left:50%; 
+    transform:translate(-50%, -50%); 
+}
+main header #gnb li{
+    float:left; 
+    margin:0px 10px; 
+}
+main header #gnb li a{
+    font:bold 14px/1 'arial'; 
+    color:#fff; 
+}
+main header .sns{
+    position:absolute; 
+    right:6vw; 
+    top:50%; 
+    transform:translateY(-50%); 
+}
+main header .sns li{
+    float:left; 
+    margin:0px 10px; 
+}
+main header .sns li a{
+    font-size:20px; 
+    color:#fff; 
+}
+
+
+
+main figure{
+    width:100%; 
+    height:100%; 
+    position:absolute; 
+    top:0px; 
+    left:0px; 
+    z-index:1; 
+}
+
+main figure video{
+    width:100%; 
+    height:100%; 
+    object-fit:cover; 
+    opacity:0.9;
+} 
+
+main p{
+    font-size:8vw; 
+    line-height:1; 
+    font-family:"arial"; 
+    color:#fff; 
+    position:absolute; 
+    top:50%; 
+    left:50%; 
+    transform:translate(-50%, -50%); 
+}
+
+/* 
+position:absolute로 두개 이상의 요소를 겹쳤을 때 
+보통은 나중에 작성된 태그가 위에 올라감 
+
+작성 순서를 무시하고 위로 올리는 방법 
+- z-index 값을 수치가 높을수록 작성 순서를 무시하고 위로 올라옴 
+
+
+
+transform:translate(가로, 세로); 
+- 자기 자신의 현재 위치에서 가로,세로로 위치 이동
+
+
+object-fit 
+-- fill : 이미지의 비율이 틀어지더라도 화면에 꽉 채움 
+-- contain : 프레임의 여백이 남더라도 이미지를 자르지 않고 비율에 맞게 꽉 채움 
+-- cover : 이미지가 잘리더라도 여백이 남지 않게, 비율에 맞게 꽉 채움 
+
+IE11 이하에서는 동작이 안됨 
+
+*/

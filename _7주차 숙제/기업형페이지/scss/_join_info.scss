@@ -1,0 +1,289 @@
+
+
+.join_info {
+    .inner {
+        padding: 0 300px;
+        min-height: 500px;
+
+        h1 {
+            position: absolute;
+            left: 80px;
+        }
+
+        form {
+            fieldset {
+                .wrap {
+                    width: 100%;
+                    padding-top: 50px;
+                    padding-left: 90px;
+
+                    article {
+                        width: calc((100% - 90px) / 3);
+                        float: left;
+                        text-align: center;
+                        padding: 0 10px;
+                        box-sizing: border-box;
+                        margin-top: 30px;
+
+
+						&:nth-of-type(2) .fa-scroll{
+							color: #e7dd54;
+						}
+		
+						&:nth-of-type(2) strong{
+                            color: #e7dd54;
+                        }
+
+                        &:nth-of-type(odd) strong {
+                            color: #aaa;
+                        }
+
+                        &:last-child {
+                            margin-right: 0;
+                        }
+
+                        a {
+                            display: block;
+                            width: 50px;
+                            height: 50px;
+                            font-size: 20px;
+                            line-height: 50px;
+                            color: #999;
+                            margin: 0 auto 10px;
+                        }
+                    }
+
+                    span .fa-chevron-right {
+                        margin-top: 50px;
+                        float: left;
+                    }
+                }
+
+                .info {
+                    width: 100%;
+
+                    h2 {
+                        font-size: 18px;
+                        font-weight: 400;
+                        color: #222;
+                        margin-top: 50px;
+                        padding-bottom: 15px;
+                        border-bottom: 2px solid #222;
+                    }
+
+                    table {
+                        width: 100%;
+                        padding: 20px 0px 15px 25px;
+
+                        tr {
+                            th {
+                                width: 30%;
+                                height: 65px;
+                                padding: 0 10px;
+                                text-align: left;
+                                font-size: 16px;
+                                font-weight: 400;
+
+                                &:last-child {
+                                    text-align: center;
+                                    padding-top: 50px;
+                                }
+
+                                input[type="reset"], input[type="button"]{
+                                    width:150px; 
+                                    height:40px; 
+                                    font-size: 16px;
+                                    font-weight: bold;
+                                    line-height: 35px;
+                                    color:#444; 
+                                    border:1px solid #444; 
+                                    border-radius:10px; 
+                                    background:#fff; 
+                                    margin: 10px;
+                                }
+                
+                                input[type="button"]{
+                                    background: #e7dd54;
+                                    color: #fff;
+                                    border-color: #e7dd54;
+                                }
+                
+                                input[type="reset"]:hover{
+                                    color: #fff;
+                                    background: #e7dd54;
+                                    cursor: pointer;
+                                    border-color: #e7dd54;
+                                }
+                
+                                input[type="button"]:hover{
+                                    color: #e7dd54;
+                                    background: #fff;
+                                    cursor: pointer;
+                                }
+                            }
+
+                            &:nth-of-type(5) td {
+                                input {
+                                    width: 57%;
+                                    margin-right: 5px;
+                                }
+
+                                select {
+                                    width: 30%;
+                                    height: 50px;
+                                    border-radius: 10px;
+                                    margin-left: 5px;
+                                }
+                            }
+
+                            &:nth-of-type(7) td {
+                                input:nth-of-type(1) {
+                                    width: 60%;
+                                    height: 50px;
+                                    margin-right: 10px;
+                                    float: left;
+                                }
+
+                                input[type="button"] {
+                                    width: 37%;
+                                    height: 50px;
+                                    float: left;
+                                    margin: 0;
+                                    padding: 0;
+                                    background: #fff;
+                                    border-color: #e7dd54;
+                                    color: #e7dd54;
+
+                                    &:hover {
+                                        background: #e7dd54;
+                                        color: #fff;
+                                    }
+                                }
+
+                                input:nth-of-type(n+3) {
+                                    width: 100%;
+                                    height: 50px;
+                                    margin-top: 10px;
+                                }
+                            }
+
+                            &:nth-of-type(8) {
+                                td input[type="radio"] {
+                                    width: 20px;
+                                    height: 20px;
+                                    margin-right: 5px;
+                                }
+
+                                label {
+                                    position: relative;
+                                    top: -4px;
+                                    margin-right: 30px;
+                                }
+                            }
+                            td {
+                                width: auto;
+                                height: 65px;
+                                padding: 10px 25px;
+    
+                                input {
+                                    width: 100%;
+                                    height: 100%;
+                                    border-radius: 10px;
+                                    border: 1px solid #ddd;
+                                    padding: 0 20px;
+                                }
+                            }
+                            
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+// tablet-----------------------------
+@media screen and (max-width:$tablet){
+    .join_info {
+        .inner {
+            padding: 0 30px;
+    
+            h1 {
+                left: 30px;
+            }
+    
+            form {
+                fieldset {
+                    .wrap {
+                        padding-left: 10px;
+    
+                        article {
+                            width: calc((100% - 20px) / 3);
+                        }
+                    }
+    
+                    .info {
+                        table {
+                            padding: 0px;
+
+                            tr:nth-of-type(7) td input:nth-of-type(1){
+                                width: 58%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+// mobile-----------------------------
+@media screen and (max-width:$mobile){
+	.join_info{
+		.inner{
+			padding: 20px;
+	
+			h1{
+				left: 20px;
+			}
+	
+            form {
+                fieldset {
+                    .info {
+                        table {
+                            tr:nth-of-type(5) td {
+                                input{
+                                    width: 100%;
+                                }
+                                label, select{
+                                    display: none;
+                                }
+                            }
+
+                            tr:nth-of-type(7) td {
+                                input:nth-of-type(1){
+                                    width: 40%;
+                                }
+
+                                input:nth-of-type(2){
+                                    width: 52%;
+                                }
+                            }
+
+                            tr:nth-of-type(8) td{
+                                input[type="radio"] {
+                                    width: 12px;
+                                    height: 12px;
+                                    margin-right: 5px;
+                                }                            }
+
+
+                        }
+                    }
+                }
+            }
+		}
+	}
+}

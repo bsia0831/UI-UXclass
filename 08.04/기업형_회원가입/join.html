@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원가입</title>
+    <script src="https://kit.fontawesome.com/6e561f56c7.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/sub_layout.css">
+	<link rel="stylesheet" href="css/join.css">
+</head>
+<body>
+    <header id="header_sub">
+		<div class="inner">
+			<h1><a href="index.html">DCODELAB</a></h1>
+
+			<ul id="gnb">
+				<li><a href="department.html">DEPARTMENT</a></li>
+				<li><a href="youtube.html">YOUTUBE</a></li>
+				<li><a href="community.html">COMMUNITY</a></li>
+				<li><a href="gallery.html">GALLERY</a></li>
+				<li><a href="location.html">LOCATION</a></li>
+			</ul>
+
+			<ul class="util">
+				<li><a href="#">Contact</a></li>
+				<li><a href="#">Login</a></li>
+				<li><a href="#">Help</a></li>
+				<li><a href="join_agreement.html">Join</a></li>
+				<li><a href="#">Sitemap</a></li>
+			</ul>
+
+			<a href="#" class="btnMo">
+				<i class="fas fa-bars"></i>
+			</a>
+
+			<nav class="menu_mobile"></nav>
+		</div>
+	</header>
+
+    <section class="content join">
+        <div class="sub_visual"></div>
+        <div class="inner">
+            <h1>Join<span>회원가입</span> </h1>
+            <!-- 서브페이지 컨텐츠 들어가는 부분 -->
+			<form action="/" method="post">
+				<fieldset>
+					<legend class="h">회원가입 입력양식폼</legend>
+					<h2>Terms & Policy</h2>
+					<textarea name="" id="" cols="30" rows="10" spellcheck="false">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis, exercitationem nostrum at, suscipit veniam ullam aspernatur placeat velit animi, repellat illum ex dolor pariatur facilis nisi! Cupiditate illo ab mollitia obcaecati id provident, tenetur reprehenderit modi velit autem, quo doloremque ea? Esse ducimus numquam sequi sit. Dolore repellendus eos fugit fugiat aut accusantium aperiam sint asperiores quaerat veniam quidem, quisquam nobis officia nulla, veritatis nesciunt odit. Quo, expedita quibusdam! Fuga cupiditate tempore cum doloribus temporibus vel, minima unde id laborum et necessitatibus voluptatum quas veniam dolores, aperiam officia eum amet placeat ad aspernatur eius sit? Inventore, deleniti aperiam rem architecto autem cupiditate voluptatibus quis officia recusandae voluptas eum delectus sed ducimus ad sunt doloribus vitae, laborum dolores animi id pariatur sequi, aut vel deserunt. Esse aperiam nesciunt maxime voluptatem quos vitae non recusandae? Expedita, nisi consectetur. Eos repudiandae at dignissimos, itaque corrupti dolore error. Amet laborum corrupti repudiandae natus consectetur quis, iure obcaecati repellendus distinctio beatae adipisci autem nulla, esse, qui error! Cupiditate enim nam nihil veritatis minima labore quidem expedita. Quis in odio recusandae eos id repellendus dignissimos voluptatem vel obcaecati earum, delectus at ad modi. Distinctio explicabo aliquid dolore ullam doloremque culpa inventore eaque unde, laborum suscipit architecto. Perferendis dolorem laboriosam expedita, sapiente sequi temporibus rerum, dolore quasi hic modi consectetur asperiores aspernatur quam deleniti. Sed praesentium harum illo dolore dolores suscipit, eaque voluptates alias autem soluta voluptatum dolor tempora, error vero necessitatibus blanditiis impedit! Quam sint maxime at quo molestiae, architecto, quae accusamus quibusdam in quaerat commodi nisi! Nulla error ullam alias nemo culpa dicta explicabo animi, veniam, quis, autem aliquid delectus et dolorum officiis beatae laudantium velit omnis ad. Cupiditate deleniti vero minima obcaecati atque ex natus quis voluptatibus excepturi saepe consectetur eum nemo veritatis repudiandae, nam a vitae ea nostrum! Repellat veritatis aliquid doloribus nulla sequi accusamus, sapiente reiciendis suscipit quis explicabo? Accusantium cumque unde quia dolores? Nobis, laborum quas. Ad aut tenetur facilis non id, dolor corporis dolorum deleniti optio? Modi corrupti blanditiis impedit consequatur vero consequuntur velit nostrum mollitia, iure, quas assumenda delectus, alias quis deserunt ipsum temporibus ipsam facere rem et? Error aut ad vitae. Perspiciatis dignissimos doloremque totam, reprehenderit quia minus quas reiciendis maxime modi, saepe laborum inventore officiis in corrupti ipsam sit quasi distinctio? Voluptate suscipit hic, quidem atque veniam illum distinctio alias molestias expedita. Ducimus temporibus beatae aut maiores? Quasi iusto voluptates illum iure architecto adipisci quo doloremque velit?
+					</textarea>
+					<h2>Member Information</h2>
+					<table summary="회원의 아이디, 비밀번호, 성별, 취미, 입력양식폼">
+						<caption class="h">회원정보 입력양식 테이블</caption>
+						<tr>
+							<th scope="row"><label for="userid">USER ID</label></th>
+							<td><input type="text" name="userid" id="userid" placeholder="아이디를 입력해주세요."></td>
+						</tr>
+						<tr>
+							<th scope="row"><label for="pwd">PASSWORD</label></th>
+							<td><input type="password" name="pwd" id="pwd" placeholder="비밀번호를 입력해주세요." required></td>
+						</tr>
+						<tr>
+							<th scope="row">HOBBY</th>
+							<td>
+								<input type="checkbox" name="hobby" id="reading">
+								<label for="reading">Reading</label>
+								<input type="checkbox" name="hobby" id="music">
+								<label for="music">Music</label>
+								<input type="checkbox" name="hobby" id="game">
+								<label for="game">Game</label>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">GENDER</th>
+							<td>
+								<input type="radio" name="gender" id="male" value="male">
+								<label for="male">Male</label>
+								<input type="radio" name="gender" id="female" value="female">
+								<label for="male">Female</label>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">E-MAIL</th>
+							<td>
+								<input type="text" name="email" id="email" placeholder="이메일주소를 입력해 주세요.">
+								@
+								<select name="company" id="company">
+									<option value="naver">naver.com</option>
+									<option value="nate">nate.com</option>
+									<option value="gmail">gmail.com</option>
+								</select>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row"><label for="comments">COMMENT</label></th>
+							<td><textarea name="comments" id="comments" cols="30" rows="10" placeholder="코멘트를 입력해 주세요."></textarea></td>
+						</tr>
+						<tr>
+							<th scope="row" colspan="2">
+								<input type="reset" value="CANCEL">
+								<input type="submit" value="SUBMIT">
+							</th>
+						</tr>
+					</table>
+				</fieldset>
+			</form>
+        </div>
+    </section>
+
+    <footer id="footer_sub">
+		<div class="inner">
+			<h1>DCODELAB</h1>
+
+			<ul>
+				<li><a href="#">Policy</a></li>
+				<li><a href="#">Terms</a></li>
+				<li><a href="#">Customer</a></li>
+				<li><a href="#">Contact Us</a></li>
+			</ul>
+
+			<address>
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, earum. <br>
+				TEL:032-700-1234
+			</address>
+
+			<p>20121 DCODELAB &copy; copyright all right reserved.</p>
+		</div>
+	</footer>
+
+</body>
+</html>

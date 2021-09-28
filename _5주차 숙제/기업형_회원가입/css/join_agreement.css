@@ -1,0 +1,238 @@
+@charset 'utf-8'; 
+*{
+    font-family: 'Noto Sans KR';
+}
+.join{
+    width:100%; 
+    padding:0 0 100px; 
+}
+
+.join .inner{
+    width:1180px; 
+    margin:0 auto;
+    padding: 0 300px;
+    min-height:500px; 
+}
+
+.join .inner h1{
+    font-size: 48px;
+    font-weight: 500;
+    text-align: center;
+    padding-top: 100px;
+    margin-bottom: 40px;
+    box-sizing: border-box;
+}
+
+.join .inner .wrap{
+    width: 100%;
+}
+
+.join .inner .wrap article{
+    width: calc((100% - 20px) / 3);
+    float: left;
+    text-align: center;
+    padding: 0 10px;
+    box-sizing: border-box;
+    margin-top: 30px;
+}
+
+.join .inner .wrap article:nth-of-type(1) .fa-clipboard-list{
+    color: #111;
+}
+
+.join .inner .wrap article:nth-of-type(n+2) strong{
+    color: #aaa;
+}
+
+.join .inner .wrap span{
+    margin-top: 50px;
+}
+
+.join .inner .wrap article a{
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: #eee;
+    border-radius: 50%;
+    font-size: 20px;
+    line-height: 50px;
+    color: #999;
+    margin: 0 auto 10px;
+}
+
+.join .inner .wrap span{
+    float: left;
+}
+
+.join .inner .wrap article:last-child{
+    margin-right: 0;
+}
+
+.join .inner .join_agreement{
+    width: 100%;
+    margin-top: 80px;
+}
+
+/* 
+이부분을 넣으면 label이랑 checkbox가 겹침
+.join .inner .join_agreement input[type="checkbox"] + label{
+    display: block;
+    width: 100%;
+    height: 60px;
+    background: url(../img/checkbox-default.png);
+    background-repeat: no-repeat;
+    background-size: 15px 15px;
+}
+
+.join .inner .join_agreement input[type="checkbox"]:checked + label{
+    background: url(../img/checkbox-active.png) no-repeat 0 0px / contain;
+    
+    background-size: 15px 15px;
+}
+
+.join .inner .join_agreement input[type="checkbox"]{
+    display: none;
+}
+
+.join .inner .join_agreement label{
+    margin-left: 50px;
+} */
+
+.join .inner .join_agreement input[type="checkbox"]{
+    width: 17px;
+    height: 17px;
+}
+
+.join .inner .join_agreement div{
+    height: 70px;
+    margin-bottom: 40px;
+    border-bottom: 1px solid #ddd;
+}
+
+.join .inner .join_agreement div:nth-of-type(n+2)::after{
+    content: ''; display: block; clear: both;
+}
+
+
+.join .inner .join_agreement .all_check label{
+    font-size: 20px;
+    position: relative;
+    top: -2.5px;
+}
+
+.join .inner .join_agreement div:nth-of-type(n+2) label{
+    font-size: 16px;
+    color: #666;
+    position: relative;
+    top: -2.5px;
+}
+
+.join .inner .join_agreement div:nth-of-type(n+2) span{
+    float: right;
+    box-sizing: border-box;
+    position: relative;
+    top: -2.5px;
+}
+
+.join .inner .join_agreement div:nth-of-type(n+2) span::after{
+    content: '\f061';
+    font-family: "Font Awesome 5 Free";
+    font-weight: 600;
+    margin-left: 10px;
+    opacity: 0.7;
+    color: skyblue;
+}
+
+.join .inner .join_agreement div:nth-of-type(n+2) span a{
+    font-size: 15px;
+    color: skyblue;
+}
+
+.join .inner .btn{
+    width: 100%;
+    text-align: center;
+    border-bottom: 0;
+    margin: 50px 0;
+}
+
+.join .inner input[type="reset"], .join .inner input[type="button"]{
+    width:150px; 
+    height:40px; 
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 35px;
+    color:#444; 
+    border:1px solid #444; 
+    border-radius:10px; 
+    background:#fff; 
+    margin: 10px;
+}
+
+.join .inner input[type="button"]{
+    background: skyblue;
+    color: #fff;
+    border-color: skyblue;
+}
+
+.join .inner input[type="reset"]:hover{
+    color: #fff;
+    background: #444;
+    cursor: pointer;
+}
+
+.join .inner input[type="button"]:hover{
+    color: skyblue;
+    background: #fff;
+    cursor: pointer;
+}
+
+/* tablet ----------------------------------------------- */
+@media screen and (max-width:1179px){
+    .join .inner table tr th{
+        width: 15%;
+        padding: 20px;
+    }
+
+    .join .inner table tr td{
+        width: auto;
+        padding: 20px;
+    }
+    
+    .join input[type="text"], .join input[type="password"]{
+        width: 100%;
+    }
+    
+    .join .inner table tr:nth-of-type(5) input[type="text"]{
+        width:calc( 100% - 150px);
+    }
+
+    .join select{
+        width:120px; 
+    }
+}
+
+/* mobile ----------------------------------------------- */
+@media screen and (max-width:539px){
+    .join .inner table tr th{
+        width:10%;         
+        padding:20px 10px;     
+        font-size:14px;    
+    }
+    
+    .join .inner table tr td{        
+        padding:20px 10px; 
+        font-size:14px; 
+    }
+    
+    .join .inner table tr:nth-of-type(5) input[type="text"]{
+        width:100%; margin-bottom:5px; 
+    }
+
+    .join select{
+        width:120px; 
+    }
+    
+    .join .inner table tr:nth-of-type(3) label{
+        display:block;
+    }
+}

@@ -1,0 +1,59 @@
+@charset "utf-8";
+/* reset */
+*{ margin: 0; padding: 0; }
+ul, li, ol{ list-style: none; }
+a{ text-decoration: none; }
+
+.wrap{
+    width: 900px;
+    border: 10px solid #000;
+    margin: 100px auto;
+}
+
+.wrap::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.wrap .box1{
+    width: 300px;
+    height: 300px;
+    background-color: #eee;
+    float: left;
+}
+
+.wrap .box2{
+    width: 300px;
+    height: 300px;
+    background-color: #ddd;
+    float: left;
+}
+
+.wrap .box3{
+    width: 300px;
+    height: 600px;
+    background-color: #ccc;
+    float: right;
+}
+
+.wrap .box4{
+    width: 300px;
+    height: 300px;
+    background-color: #bbb;
+    float: left;
+}
+
+.wrap .box5{
+    width: 300px;
+    height: 300px;
+    background-color: #aaa;
+    float: right;
+}
+
+/* 
+float배치시 유의점
+중간에 세로로 긴요소가 배치가 돼서 특정방향에 빈공간이 생겼을 때 float방향과 여백의 방향이 같으면 해당 빈 공간에 다음요소들이 배치가 안된다
+
+해결방법: float의 방량을 변경
+*/

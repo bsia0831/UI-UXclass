@@ -1,0 +1,71 @@
+/*reset*/
+* {
+  margin: 0px;
+  padding: 0px; }
+
+ul, ol, li {
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+#slider {
+  width: 500px;
+  height: 300px;
+  border: 10px solid #000;
+  margin: 100px auto;
+  position: relative;
+  overflow: hidden; }
+  #slider .list {
+    width: calc(100% * 4);
+    height: 100%;
+    margin-left: -100%; }
+    #slider .list li {
+      width: calc(100% / 4);
+      height: 300px;
+      float: left;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 50px;
+      color: #fff; }
+      #slider .list li[data-index="1"] {
+        background: hotpink; }
+      #slider .list li[data-index="2"] {
+        background: orange; }
+      #slider .list li[data-index="3"] {
+        background: aqua; }
+      #slider .list li[data-index="4"] {
+        background: lightgreen; }
+      #slider .list li[data-index="5"] {
+        background: orangered; }
+      #slider .list li[data-index="6"] {
+        background: tan; }
+  #slider .prev {
+    position: absolute;
+    top: 50%;
+    left: 50px;
+    margin-top: -50px; }
+  #slider .next {
+    position: absolute;
+    top: 50%;
+    right: 50px;
+    margin-top: -50px; }
+
+.controls {
+  position: absolute;
+  right: 100px;
+  bottom: 150px; }
+  .controls li {
+    float: left;
+    margin-left: 20px; }
+    .controls li a {
+      display: inline-block;
+      font-size: 20px;
+      color: #999;
+      transition: 0.5s; }
+      .controls li a.on {
+        color: #333;
+        transform: scale(1.5); }
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,76 @@
+@charset 'utf-8'; 
+@import 'reset.css'; 
+
+ /* 
+ transform 
+
+ translateX() 
+ translateY() 
+ translateZ() 
+ translate3d(tranlateX, translateY, translateZ)
+
+ scaleX() 
+ scaleY() 
+ scaleZ() 
+ scale3d(scaleX, scaleY, scaleZ)
+
+ rotateX() 
+ rotateY() 
+ rotateZ() 
+ rotate3d(angleX, angleY, angleZ)
+
+ transform-origin : 변환 중심 설정 
+ tranform-style : preserve-3d; 
+  - 자손의 3차원 속성을 유지시킴 
+
+ backface-visibility : visible/hidden
+ 평면의 후면을 보이게 할 것인지 설정 
+
+ perspective 원근감 400~ 2000px
+ */
+
+section{
+    width:100%;     
+} 
+
+section article{
+    width:200px; 
+    height:200px; 
+    border:5px solid #000; 
+    margin:100px; 
+    position:relative; 
+    perspective:900px; 
+}
+
+section article div{
+    width:100%; 
+    height:100%; 
+    background:blue; 
+    opacity:0.3; 
+    position:absolute; 
+    top:0; left:0; 
+}
+
+.frame1 div{
+    transform:rotateX(0deg); transition:0.5s; 
+}
+.frame1:hover div{
+    transform:rotateX(45deg);
+}
+
+.frame2 div{
+    transform:rotateY(0deg); transition:0.5s; 
+    transform-origin:right center; 
+}
+.frame2:hover div{
+    transform:rotateY(130deg); 
+}
+
+.frame3 div{
+    transform:rotateY(0deg); 
+    transition:0.5s; 
+    transform-origin:left center; 
+}
+.frame3:hover div{
+    transform:rotateY(130deg); 
+}

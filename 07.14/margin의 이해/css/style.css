@@ -1,0 +1,36 @@
+@charset "utf-8";
+
+div{
+    width: 300px; height: 300px;
+    border: 1px solid black;
+    font-size: 50px;
+    color: white;
+}
+
+.hotpink{
+    background-color: hotpink;
+}
+
+.aqua{
+    background-color: aqua;
+}
+
+.mission1{
+    background-color: lightgreen;
+}
+
+.red{
+    background-color: red;
+    /* margin: 100px 50px;
+    margin: 100px auto; 가로 가운데 배치
+    margin: 100px auto 50; 위로 100px 여백 좌우 가운데, 아래 50px 여백
+    margin: 0px 20px 40px 80px 각각 설정 */
+    margin: 50px;
+
+}
+
+.blue{
+    background-color: blue;
+    margin-top: 80px;
+    
+}

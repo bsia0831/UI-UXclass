@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sass_basic</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- 
+        SASS : 코드 입력시 중괄호 생략
+        SCSS : 코드 입력시 중괄호 입력 
+
+        SCSS 문법으로 작성된 코드를 실시간으로 일반 CSS파일로 변환 
+        --HTML파일은 css파일밖에 인식을 못함 
+
+        scss파일 분리하기 
+        1) 분리할 scss구문을 _파일명.scss로 분리 
+        2) style.scss파일에 @import "파일명.scss"; 로 연결 
+
+        변수 
+        - 자주 변경될 만한 값을 특정 공간에 저장해서 
+        - 해당값을 필요한 곳에 재활용할 때 
+
+        nesting
+        - HTML중첩구조와 동일하게 scss구문을 변경 
+
+
+        mixin 
+        - 자주 쓰는 구문들을 패키지 형태로 묶어놓은 형태 
+        -인수를 활용하여 기본틀을 유지하면서 다양한 옵션값을 변경 가능 
+
+        for(반복문)
+        -반복되는 구문을 자동으로 생성 
+
+     -->
+ <div class="wrap">
+       <article class="item">
+           <h2>Sub title</h2>
+           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero quibusdam animi, consequuntur ad fuga tenetur?</p>
+           <a href="#">view</a>
+       </article> 
+       <article class="item">
+            <h2>Sub title</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero quibusdam animi, consequuntur ad fuga tenetur?</p>
+            <a href="#">view</a>
+        </article> 
+        <article class="item">
+            <h2>Sub title</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero quibusdam animi, consequuntur ad fuga tenetur?</p>
+            <a href="#">view</a>
+        </article> 
+        <article class="item">
+            <h2>Sub title</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero quibusdam animi, consequuntur ad fuga tenetur?</p>
+            <a href="#">view</a>
+        </article> 
+ </div>
+</body>
+</html>

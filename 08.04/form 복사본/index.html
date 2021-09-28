@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form 요소</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- 
+        form요소는 사용자 입력을 위한 요소로 
+        사용자로부터 정보를 수집하는 역할 
+
+        action은 정보를 건네받는 곳을 지정 
+        method는 해당 정보가 전송되는 방식- get, post 
+
+        type 은 입력 태그의 유형 
+        value 는 입력 태그의 초기화 값, 또는 사용자가 입력한 값
+
+        name 은 입력 태그의 이름 - 서버로 전달될 때 이름에 값을 붙여서 전송 
+     -->
+     <!-- 
+    <form action="result.html" method="get">
+        <input type="text" name="" id="">
+        <input type="password" name="" id="">
+        <input type="checkbox">
+        <input type="radio">
+        <input type="file">
+        <input type="tel">
+        <input type="number">
+        <input type="date">
+        <input type="range">
+        <input type="image">
+        <input type="button">
+        <input type="submit">
+        <input type="reset">
+
+        <input type="color">
+        <input type="time">
+
+        <select name="" id="">
+            <option value="">1</option>
+            <option value="">2</option>
+            <option value="">3</option>
+        </select>
+
+
+    </form>
+
+    -->
+
+    <form action="result.html" method="get">
+        <fieldset>
+            <legend>회원가입폼</legend>
+
+            <table border="1">
+                <tr>
+                    <th>이름</th>
+                    <td>
+                        <input type="text" name="username" id="">
+                    </td>
+                </tr>
+                <tr>
+                    <th>비밀번호</th>
+                    <td>
+                        <input type="password" name="pwd">
+                    </td>
+                </tr>
+                <tr>
+                    <th>취미</th>
+                    <td>
+                        <input type="checkbox" name="hobby" id="reading" value="reading">
+                        <label for="reading">독서</label>
+                        <input type="checkbox" name="hobby" id="movie" value="movie"> 
+                        <label for="movie">영화</label>                        
+                    </td>
+                </tr>
+                <tr>
+                    <th>성별</th>
+                    <td>
+                        <input type="radio" name="gender" id="male" value="male">
+                        <label for="male">남성</label>
+                        <input type="radio" name="gender" id="female" value="female">
+                        <label for="female">여성</label>
+                    </td>
+                </tr>
+                <tr>
+                    <th colspan="2">
+                        <input type="submit" value="전송">
+                    </th>
+                </tr>
+            </table>
+        </fieldset>
+    </form>
+</body>
+</html>

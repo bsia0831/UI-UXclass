@@ -1,0 +1,52 @@
+@charset 'utf-8';
+
+$tablet:1179px;
+$mobile:539px;
+
+@import "reset.scss";
+
+#header {
+    width: 100%;
+    border-bottom: 1px solid #ddd;
+
+    .inner {
+        width: 1180px;
+        height: 120px;
+        margin: 0 auto;
+        position: absolute;
+        border: 1px solid red;
+
+        h1 {
+            position: absolute;
+            left: 0;
+            bottom: 15px;
+        }
+
+        .gnb {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+
+            &::after{
+                content:''; 
+                display:block; 
+                clear:both; 
+            }
+
+            li {
+                float: left;
+
+                a {
+                    display: block;
+                    width: 100px;
+                    height: 40px;
+                    padding: 20px 30px;
+                    background: #555;
+                    text-align: center;
+                    color: #fff;
+                }
+            }
+        }
+    }
+}

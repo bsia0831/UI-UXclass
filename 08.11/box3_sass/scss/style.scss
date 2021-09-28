@@ -1,0 +1,82 @@
+@charset 'utf-8'; 
+@import "reset.scss"; 
+
+#box3{
+    width:100%; 
+    padding:180px 0 150px; 
+    background:#fff; 
+
+    .inner{
+        width:1180px;
+        margin:0 auto; 
+        position:relative; 
+
+        h1{
+            font:bold 22px/1 'arial'; 
+            color:#555; 
+            text-align:center; 
+            margin-bottom:10px; 
+        }
+        p{
+            font:16px/1 'arial'; 
+            color:#888; 
+            text-align:center; 
+            margin-bottom:40px; 
+        }
+
+        .wrap{
+            width:100%; 
+
+            article{
+                width:280px; 
+                margin-right:20px; 
+                float:left; 
+                border:1px solid #ddd; 
+                border-bottom:3px solid #888; 
+                box-sizing:border-box; 
+
+                &:last-child{
+                    margin-right:0; 
+                }
+
+                .pic{
+                    width:100%; 
+                    height:150px; 
+                    background:#666; 
+                }
+                .txtBox{
+                    width:100%; 
+                    padding:40px 30px; 
+                    box-sizing:border-box; 
+                    text-align:center;
+                    
+                    h2{
+                        font:bold 18px/1 'arial'; 
+                        color:#555; 
+                        margin-bottom:20px; 
+                    }
+                    p{
+                        font:14px/1.3 'arial'; 
+                        color:#777; 
+                        margin-bottom:30px; 
+                    }
+
+                    .btn{
+                        display:block; 
+                        width:170px; 
+                        height:40px; 
+                        border-radius:20px; 
+                        background:linear-gradient(45deg, #888, #aaa);
+                        box-shadow:10px 10px 20px rgba(0,0,0,0.2);
+                         margin:0 auto;  
+                         font: 12px/40px 'arial'; 
+                         color:#fff; 
+                         
+                    }
+                }
+            }
+
+
+        }
+    }
+}

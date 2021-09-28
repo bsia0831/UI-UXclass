@@ -1,0 +1,72 @@
+@charset "utf-8";
+/* reset */
+*{ margin: 0; padding: 0; }
+ul, li, ol{ list-style: none; }
+a{ text-decoration: none; }
+
+.wrap{
+    width: 1000px;
+    border: 5px solid #000;
+    margin: 50px auto;
+}
+
+.wrap .left{
+    width: 500px;
+    height: 400px;
+    background: lightblue;
+    float: left;
+}
+
+.wrap .right{
+    width: 500px;
+    height: 400px;
+    background: pink;
+    float: left;
+    position: relative;
+}
+
+.wrap .bottom{
+    width: 1000px;
+    height: 100px;
+    background: lightgreen;
+    float: left;
+}
+
+.box{
+    width: 50px;
+    height: 50px;
+    background: #111;
+    position: absolute;
+    bottom: 50px;
+    right: 30px;
+}
+
+.box1{
+    width: 50px;
+    height: 50px;
+    background: orange;
+    position: relative;
+    left: 100px;
+    top: 100px;
+}
+
+.box2{
+    width: 50px;
+    height: 50px;
+    background: red;
+}
+
+/* 
+position: absolute / relative
+
+absolute
+- 특정 요소를 화면에서 뜯어낸 다음 원하는 위치
+- 가로 세로 좌표값을 부여해서 화면상에 원하는 위치에 살포시 얹어 놓음
+- 부모요소 중에서 position속성이 적용되어 있는 것을 기준으로 좌표값이 설정
+
+- 브라우저는 absolute요소의 크기를 인지하지 못한다
+
+relative
+- 화면상에 아무런 변화점을 주지 않으면서 position속성을 부여
+- absolute요소의 기준점을 부여
+*/

@@ -1,0 +1,85 @@
+@charset 'utf-8';
+@import "reset.scss";
+
+#box4{
+    width: 100%;
+    padding: 100px 0 0;
+    background-color: #fff;
+
+    .inner{
+        width: 1180px;
+        margin: 0 auto;
+        position: relative;
+
+        .wrap{
+            width: 100%;
+            // background: linear-gradient(to right, #fff 70%, #eee 10%);
+
+            article{
+                width: 490px;
+                position: relative;
+                
+                &:nth-of-type(1){
+                    padding: 40px 0;
+                    float: left;
+
+                    p{
+                        font: 18px/1.1 'arial';
+                        color: #777;
+                    }
+                }
+
+                &:nth-of-type(2){
+                    padding: 40px 0;
+                    float: right;
+
+                    h2{
+                        font: bold 18px/1 'arial';
+                        color: #555;
+                        margin-bottom: 10px;
+                        position: relative;
+                    }
+
+                    p{
+                        font: 14px/1.2 'arial';
+                        color: #888;
+                        margin-bottom: 20px;
+                        position: relative;
+                    }
+
+                    .pic{
+                        width: 160px;
+                        height: 160px;
+                        background: #aaa;
+                        position: absolute;
+                        right: 40px;
+                        top: -30px;
+                    }
+
+                    &::before{
+                        content: '';
+                        display: block;
+                        width: 70%;
+                        height: 100%;
+                        background-color: #eee;
+                        position: absolute;
+                        bottom: 0;
+                        right: 0;
+                    }
+
+                    a.btn{
+                        display: block;
+                        width: 100px;
+                        height: 30px;
+                        border-radius: 15px;
+                        border: 1px solid #ccc;
+                        font: 12px/30px 'arial';
+                        text-align: center;
+                        color: #888;
+                        position: relative;
+                    }
+                }
+            }
+        }
+    }
+}

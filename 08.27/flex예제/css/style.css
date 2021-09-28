@@ -1,0 +1,107 @@
+@charset 'utf-8';
+
+/* Alegreya Sans SC */
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&display=swap');
+@import 'reset.css';
+
+main{
+    width: 100%;
+    height: 100vh;
+    background: #333;
+    display: flex;
+}
+
+main header{
+    width: 20%;
+    height: 100%;
+    padding: 10vh 5vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: space-around;
+}
+
+main header h1{
+    color: #fff;
+}
+
+main header h1 i{
+    font-size: 5vw;
+    margin-bottom: 15px;
+}
+
+main header h1 span{
+    font: normal 11px/0.8 'arial';
+    color: #888;
+}
+
+main header h1 address{
+    font: normal 11px/1.2 'arial';
+    color: #888;
+}
+
+main nav{
+    position: absolute;
+    top: 10vh;
+    right: 5vw;
+}
+
+main nav ul{
+    display: flex;
+}
+
+main nav ul li a{
+    font-size: 18px;
+    color: #bbb;
+    margin-right: 30px;
+}
+
+/* section */
+main section{
+    width: 80%;
+    height: 100%;
+    padding-top: 15vh;
+    position: relative;
+    display: flex;
+}
+
+main section article{
+    flex: 1;
+    padding: 70px 40px 100px;
+}
+
+main section article .inner{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+}
+
+main section article .inner .txt{
+    width: 100%;
+}
+
+main section article .inner .txt h2{
+    font: nomal 2vw/1 'Alegreya Sans SC ';
+    color: #fff;
+    margin-bottom: 40px;
+    padding-top: 70px;
+}
+
+main section article .inner .txt p{
+    font: 14px/1.4 'arial';
+    color: #999;
+}
+
+main section article .inner figure{
+    width: 100%;
+    height: 15vh;
+    overflow: hidden;
+}
+
+main section article .inner figure video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

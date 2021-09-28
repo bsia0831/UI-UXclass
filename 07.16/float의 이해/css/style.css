@@ -1,0 +1,61 @@
+@charset "utf-8";
+/* reset */
+*{ margin: 0; padding: 0; }
+ul, li, ol{ list-style: none; }
+a{ text-decoration: none; }
+
+.wrap{
+    width: 900px;
+    border: 10px solid #000;
+    margin: 100px auto;
+}
+
+.wrap::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.wrap .left{
+    width: 400px;
+    height: 400px;
+    background-color: pink;
+    float: left;
+}
+
+.wrap .right{
+    width: 400px;
+    height: 400px;
+    background-color: lightblue;
+    float: left;
+}
+
+.wrap .bottom{
+    width: 800px;
+    height: 100px;
+    background-color: aqua;
+    float: left;
+}
+
+/* 
+float
+블록요소를 좌우로 배치
+- 특정 부모요소안에서 좌우로 배치할 요소 모두에 float 설정
+- 특정 요소를 float처리하면 부모요소는 float요소의 높이값을 인지못함
+
+float 해제
+- float처리시 높이값을 인지 못하는 현상을 수정
+
+float 해제 방법 6가지 
+1. 부모요소에 강제로 높이값을 지정
+2. 부모요소에 overflow:auto 지정
+3. 부모요소에 overflow:hidden지정
+4. 부모요소에 float 지정
+5. float된 요소의 아래쪽에 배치되는 요소에 clear:both적용
+6. 가상선택자 ::after를 이용하여 clear:both를 적용(추천)
+
+블록요소를 좌우배치하는 방법
+1. 좌우 배치할 요소 모두에 float:left 적용
+2. float을 배치한 부모요소에 ::after{ content:''; display:block; clear:both; }구문으로 float해제
+3. 부모요소 안에 좌우배치되는 요소가 하나라도 있으면  그 안쪽에 있는 모든 블록요소를 float 처리
+*/

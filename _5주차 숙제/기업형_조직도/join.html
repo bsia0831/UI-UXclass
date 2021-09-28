@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원가입</title>
+    <script src="https://kit.fontawesome.com/6e561f56c7.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/sub_layout.css">
+	<link rel="stylesheet" href="css/join.css">
+</head>
+<body>
+    <header id="header_sub">
+		<div class="inner">
+			<h1><a href="index.html">DCODELAB</a></h1>
+
+			<ul id="gnb">
+				<li><a href="department.html">DEPARTMENT</a></li>
+				<li><a href="youtube.html">YOUTUBE</a></li>
+				<li><a href="community.html">COMMUNITY</a></li>
+				<li><a href="gallery.html">GALLERY</a></li>
+				<li><a href="location.html">LOCATION</a></li>
+			</ul>
+
+			<ul class="util">
+				<li><a href="#">Contact</a></li>
+				<li><a href="#">Login</a></li>
+				<li><a href="#">Help</a></li>
+				<li><a href="join.html">Join</a></li>
+				<li><a href="#">Sitemap</a></li>
+			</ul>
+
+			<a href="#" class="btnMo">
+				<i class="fas fa-bars"></i>
+			</a>
+
+			<nav class="menu_mobile"></nav>
+		</div>
+	</header>
+
+    <section class="content join">
+        <div class="sub_visual"></div>
+        <div class="inner">
+            <h1>Join<span>회원가입</span> </h1>
+            <!-- 서브페이지 컨텐츠 들어가는 부분 -->
+
+			<form action="/" method="post">
+				<fieldset>
+					<legend class="h">회원가입 입력양식폼</legend>
+
+					<h2>Terms & Policy</h2>
+					<textarea name="" id="" cols="30" rows="10">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita dolor facilis ipsam? Reiciendis, ratione sapiente fuga ab et quod inventore, sint, saepe consectetur repudiandae itaque modi laborum aspernatur nostrum! Dolorum minus aliquam eveniet magni, alias porro consequuntur laborum iusto iste, beatae inventore perferendis sapiente nulla! Quae commodi hic magni. At eum, inventore maiores ab obcaecati cupiditate id explicabo ut voluptatum dolorum. Perferendis repellendus, facilis vel cum eaque nesciunt deserunt odio ut nulla delectus tempore animi officiis ipsa, tenetur aliquam, quo atque! Porro sequi dolores nulla natus recusandae facilis, corporis dolore. In, quod eaque pariatur magnam quibusdam aliquam quasi soluta deserunt quam deleniti sit animi molestiae iste minima repudiandae aliquid officia vero modi, quae maxime autem obcaecati. Nisi voluptates dolorem debitis eveniet, maxime minus voluptatum aliquam. Quisquam quibusdam necessitatibus esse veniam maxime dolorem dolor et accusamus voluptas. Quae autem quaerat placeat ea, nulla rem libero accusamus quis officia qui eveniet debitis corrupti corporis repellendus delectus? Aliquid dolore blanditiis provident porro ab perspiciatis, voluptas fugit iusto distinctio sapiente, optio tenetur eius hic repellendus. Voluptate repudiandae fugit quis porro! Esse facilis debitis velit, magnam inventore dicta est, excepturi commodi odio omnis tempore et maxime. Dolor ex ratione minima molestias quidem. Dolor, facilis dolores?
+					</textarea>
+
+					<h2>Member Information</h2>
+					<table surmmary="회원의 아이디, 비밀번호, 성별, 취미 입력양식폼">
+						<caption class="h">회원정보 입력양식 테이블</caption>
+
+						<tr>
+							<th scope="row"><label for="userid">USER ID</label></th>
+							<td><input type="text" name="userid" id="userid" placeholder="아이디를 입력해 주세요" required></td>
+						</tr>
+						<tr>
+							<th scope="row"><label for="pwd">PASSWORD</label></th>
+							<td><input type="password" name="pwd" id="pwd" placeholder="비밀번호를 입력해 주세요" required></td>
+						</tr>
+						<tr>
+							<th scope="row">HOBBY</th>
+							<td>								
+								
+								<label for="reading"><input type="checkbox" name="hobby" id="reading" value="reading">Reading</label>
+
+								
+								<label for="music"><input type="checkbox" name="hobby" id="music" value="music">Music</label>
+
+								
+								<label for="game"><input type="checkbox" name="hobby" id="game" value="game">Game</label>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">GENDER</th>
+							<td>
+								<input type="radio" name="gender" id="male" value="male">
+								<label for="male">Male</label>
+								<input type="radio" name="gender" id="female" value="female">
+								<label for="female">Female</label>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row"><label for="email">E-MAIL</label></th>
+							<td>
+								<input type="text" name="email" id="email" placeholder="이메일주소를 입력해 주세요">
+								@
+								<select name="company" id="company">
+									<option value="naver">naver.com</option>
+									<option value="nate">nate.com</option>
+									<option value="daum">daum.net</option>
+								</select>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row"><label for="comments">COMMENT</label></th>
+							<td>
+								<textarea name="comments" id="comments" cols="30" rows="10" placeholder="코멘트를 입력해 주세요"></textarea>
+							</td>
+						</tr>
+						<tr>
+							<th colspan="2" >
+								<input type="reset" value="CANCEL">
+								<input type="submit" value="SUBMIT">
+							</th>
+						</tr>
+					</table>
+				</fieldset>
+			</form>
+
+<!-- 
+	폼요소 전달값 
+	name=value
+ -->
+        </div>
+    </section>
+
+    <footer id="footer_sub">
+		<div class="inner">
+			<h1>DCODELAB</h1>
+
+			<ul>
+				<li><a href="#">Policy</a></li>
+				<li><a href="#">Terms</a></li>
+				<li><a href="#">Customer</a></li>
+				<li><a href="#">Contact Us</a></li>
+			</ul>
+
+			<address>
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, earum. <br>
+				TEL:032-700-1234
+			</address>
+
+			<p>20121 DCODELAB &copy; copyright all right reserved.</p>
+		</div>
+	</footer>
+
+</body>
+</html>

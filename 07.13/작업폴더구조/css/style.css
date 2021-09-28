@@ -1,0 +1,23 @@
+h1, h2, h3, h4, h5, h6{
+    border: 1px solid red;
+}
+
+p{
+    border: 1px solid green;
+}
+
+ul, ol{
+    border: 1px solid blue;
+}
+
+div{
+    border: 10px solid black;
+}
+
+strong{
+    border: 1px solid hotpink;
+}
+
+span{
+    color: aqua;
+}

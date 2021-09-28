@@ -1,0 +1,37 @@
+@charset 'utf-8'; 
+@import 'reset.css'; 
+
+section{
+    width:100%; 
+    background:lightcyan; 
+    display:flex; 
+} 
+
+section article{
+    background:aqua; 
+    border:1px solid #000; 
+    box-sizing:border-box; 
+    font-size:50px; 
+    color:#fff; 
+    display:flex; 
+     
+}
+section article:nth-of-type(1){
+    flex-grow:1; 
+}
+section article:nth-of-type(2){
+    flex-grow:2; 
+}
+section article:nth-of-type(3){
+    flex-grow:3; 
+}
+
+
+/* 
+section에 display:flex를 지정 
+article이 display:inline-block으로 설정되어 텍스트 크기만큼만 설정됨 
+
+flex-grow 
+- 요소의 여백 비율 확대하기 속성 
+- 요소의 크기를 키웠을 때 요소 안쪽의 여백이 확대되는 비율을 지정  
+*/

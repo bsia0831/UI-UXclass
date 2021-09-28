@@ -1,0 +1,51 @@
+@charset 'utf-8';
+@import 'reset.css';
+
+section{
+    width: 100%;
+    padding: 100px 0;
+    background: #efefef;
+    position: relative;
+}
+
+section .wrap{
+    width: 1180px;
+    margin: 0 auto;
+}
+
+section article{
+    width: 280px;
+    height: 100px;
+    background: orange;
+    float: left;
+    margin-right: 20px;
+    opacity: 0;
+    transform: translateY(+100px);
+    transition: all 1s;
+}
+
+section article:last-child{
+    margin-right: 0;
+}
+
+section:hover article{
+    background: pink;
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+section:hover article:nth-of-type(1){
+    transition-delay: 0s;
+}
+
+section:hover article:nth-of-type(2){
+    transition-delay: 0.3s;
+}
+
+section:hover article:nth-of-type(3){
+    transition-delay: 0.6s;
+}
+
+section:hover article:nth-of-type(4){
+    transition-delay: 0.9s;
+}

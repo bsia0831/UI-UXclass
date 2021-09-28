@@ -1,0 +1,42 @@
+@charset "utf-8";
+@import 'reset.css';
+
+main{
+    width: 100%;
+    height: 100vh;
+    background: lightgreen;
+}
+
+main figure{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+main figure img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+main p{
+    font-size: 8vw;
+    line-height: 1;
+    font-family: 'arial';
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* 
+object-fit
+--fill: 이미지의 비율이 틀어지더라도 화면에 꽉 채움
+--contain: 프레임의 여백이 남더라도 이미지를 자르지 않고 비울에 맞게 꽉채움
+--cover: 이미지가 자리더라도 여백이 남지 않게, 비율에 맞게 꽉 채움
+
+IE11이하에서는 동작이 안됨
+*/

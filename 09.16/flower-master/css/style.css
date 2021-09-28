@@ -1,0 +1,70 @@
+/*reset*/
+* {
+  margin: 0px;
+  padding: 0px; }
+
+ul, ol, li {
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+#wrap {
+  width: 800px;
+  height: 400px;
+  margin: 200px auto;
+  border: 1px solid #000; }
+  #wrap::after {
+    content: '';
+    display: block;
+    clear: both; }
+  #wrap .left {
+    width: 200px;
+    height: 100%;
+    background: #222;
+    float: left; }
+    #wrap .left ul li a {
+      display: block;
+      width: 100%;
+      height: 50px;
+      font: bold 14px/50px 'arial';
+      color: #888;
+      padding-left: 20px;
+      box-sizing: border-box; }
+      #wrap .left ul li a.on {
+        background: #000;
+        color: aqua; }
+  #wrap .right {
+    width: 600px;
+    height: 100%;
+    float: right;
+    position: relative; }
+    #wrap .right > div {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      right: 0;
+      top: 0;
+      font: bold 100px/1 'arial';
+      color: #555;
+      display: none; }
+      #wrap .right > div#box1 {
+        display: block; }
+      #wrap .right > div p {
+        width: 200px;
+        height: 200px;
+        background: aqua;
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform: rotate(360deg) scale(1);
+        opacity: 0;
+        transition: all 0.5s; }
+      #wrap .right > div.on p {
+        top: -100px;
+        right: -100px;
+        transform: rotate(0deg) scale(1.3);
+        opacity: 1;
+        background: pink; }
+
+/*# sourceMappingURL=style.css.map */

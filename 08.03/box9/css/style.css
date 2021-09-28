@@ -1,0 +1,70 @@
+@charset 'utf-8'; 
+@import 'reset.css'; 
+
+#box9{
+    width:100%; 
+}
+
+#box9::after{
+    content: ''; display: block; clear: both;
+}
+
+#box9 .left{
+    width: 50%;
+    height: 500px;
+    background: #888;
+    float: left;
+}
+
+#box9 .right{
+    width: 50%;
+    height: 500px;
+    background: #222;
+    float: left;
+}
+
+#box9 .right .inner{
+    width:590px; 
+    padding: 50px;
+    box-sizing: border-box;
+}
+
+#box9 .right .inner h1{
+    font: bold 22px/1 'arial';
+    color: #fff;
+    margin-bottom: 5px;
+}
+
+#box9 .right .inner h2{
+    font: 18px/1 'arial';
+    color: #aaa;
+    margin-bottom: 50px;
+}
+
+#box9 .right .inner article{
+    margin-bottom: 30px;
+}
+
+#box9 .right .inner article h3{
+    font: 16px/1 'arial';
+    color: #666;
+    margin-bottom: 10px;
+}
+
+#box9 .right .inner article p{
+    font: 12px/1.2 'arial';
+    color: #555;
+    margin-bottom: 20px;
+}
+
+#box9 .right .inner .btn{
+    display: block;
+    width: 120px;
+    height: 30px;
+    font: 12px/30px 'arial';
+    background: #666;
+    color: #111;
+    text-align: center;
+    border-radius: 15px;
+    margin-top: 10px;
+}

@@ -1,0 +1,133 @@
+@charset 'UTF-8';
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+ 
+body{
+    width:100%; 
+    height:100vh; 
+    overflow:hidden; 
+    animation:sky 20s linear infinite;  
+}
+
+h1{
+    width:1000px; 
+    font:90px/1 "Poiret one"; color:#fff; 
+    position:absolute; 
+    top:50%; 
+    left:50%; 
+    transform:translate(-50%,150%); 
+    text-align:center; 
+}
+
+section{
+    width:1000px; 
+    height:400px; 
+    position:absolute; 
+    top:50%; 
+    left:50%; 
+    transform:translate(-50%, -70%);
+}
+
+section .sky{
+    animation:day 20s linear infinite; 
+}
+
+section .sky .sun{
+    position:absolute; 
+    top:-150px; 
+    left:50%; 
+    margin-left:-100px; 
+    animation:sun 20s linear infinite; 
+    transform-origin:center 500px; 
+}
+
+section .sky .cloud1{
+    position:absolute; 
+    top:-30px; 
+    left:10%; 
+    animation:flow 10s linear infinite; 
+}
+section .sky .cloud2{
+    position:absolute; 
+    top:20px; 
+    left:0; 
+    animation:flow 15s linear infinite; 
+}
+
+section .town .circle{
+    position:absolute; 
+    left:50%; 
+    bottom:100px; 
+    margin-left:-200px; 
+    animation:rotation 20s linear infinite; 
+}
+
+section .town .night{
+    position:absolute; 
+    bottom:0; 
+    left:40px; 
+}
+section .town .day{
+    position:absolute; 
+    bottom:0; 
+    left:40px; 
+    animation:day 20s linear infinite; 
+}
+
+section .people .man{
+    position:absolute; 
+    bottom:0; 
+    left:0; 
+    animation:flow 7s linear infinite; 
+}
+section .people .family{
+    position:absolute; 
+    bottom:0; 
+    left:0; 
+    animation:flow 20s linear infinite; 
+}
+
+
+
+
+
+@keyframes rotation{
+    0%{ transform:rotate(0deg);  }
+    100%{ transform:rotate(360deg);}
+}
+
+@keyframes sky{
+    0%{ background:#b08fcc;  }
+    25%{ background:#b1e1e2;  }
+    50%{ background:#fcd2e2;  }
+    75%{ background:#636888; }
+    100%{background:#b08fcc; }
+}
+
+@keyframes sun{
+    0%{ transform:rotate(-90deg); }
+    25%{ transform:rotate(-30deg);  }
+    50%{ transform:rotate(30deg); }
+    75%{ transform:rotate(90deg);  }
+    100%{transform:rotate(-90deg); }
+}
+
+
+@keyframes day{
+    0%{ opacity:0;  }
+    25%{ opacity:1; }
+    50%{ opacity:1; }
+    75%{ opacity:0; }
+    100%{ opacity:0; }
+}
+
+@keyframes flow{
+    0%{ left:0; opacity:0; }
+    10%{ opacity:1;  }
+    80%{ opacity:1; }
+    100%{ left:90%; opacity:0; }
+}

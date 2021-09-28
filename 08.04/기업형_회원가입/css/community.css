@@ -1,0 +1,244 @@
+@charset 'utf-8'; 
+
+.community .sub_visual{
+    height: 300px;
+    background-image: url(../img/snowymountainsreflections.jpeg);
+    background-repeat:no-repeat; 
+    background-position:center center; 
+    background-size: cover; 
+    background-attachment: fixed;
+}
+
+.content .inner::after{
+    content: ''; display: block; clear: both;
+}
+
+.content .inner .left{
+    float: left;
+    width: 30%;
+}
+
+.content .inner .left h1 span{
+    display:block; 
+    margin-top:5px; 
+    width: 300px;
+} 
+
+.content .inner .right{
+    float: left;
+    width: 826px;
+}
+
+.community .inner .right table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.community .inner .right table th:nth-of-type(1){
+    width: auto;
+}
+
+.community .inner .right table th:nth-of-type(2){
+    width: 20%;
+}
+
+.community .inner .right table th{
+    padding: 15px;
+    color: #444;
+    font: normal 14px/1 '맑은 고딕';
+    border-top: 1px solid #111;
+    border-bottom: 1px solid #ddd;
+}
+
+.community .inner .right table td{
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+    font: normal 13px/1 '맑은 고딕';
+    color: #888;
+    text-decoration: none;
+}
+
+.community .inner .right table td a{
+    font-size: 13px;
+    color: #222;
+}
+
+.community .inner .right table td:nth-of-type(2){
+    text-align: center;
+}
+
+.community .inner .right table a:hover{
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+/* pagination */
+.community .inner .right .pagination{
+    padding-top: 30px;
+    text-align: center;
+    width: 510px;
+    margin: 0 auto;
+}
+
+.community .inner .pagination::after{
+    content: ''; display: block; clear: both;
+}
+
+.community .inner .pagination .prev_double{
+    float: left;
+    display: block;
+    width: 30px;
+    height: 30px;
+    color: #777;
+    border: 1px solid #aaa;
+    text-align: center;
+    line-height: 30px;
+    margin-right: 5px;
+}
+
+.community .inner .pagination .prev{
+    float: left;
+    display: block;
+    width: 30px;
+    height: 30px;
+    color: #777;
+    border: 1px solid #aaa;
+    text-align: center;
+    line-height: 30px;
+    margin-right: 10px;
+}
+
+.community .inner .pagination .next{
+    float: left;
+    display: block;
+    width: 30px;
+    height: 30px;
+    color: #777;
+    border: 1px solid #aaa;
+    text-align: center;
+    line-height: 30px;
+    margin-left: 10px;
+}
+
+.community .inner .pagination .next_double{
+    float: left;
+    display: block;
+    width: 30px;
+    height: 30px;
+    color: #777;
+    border: 1px solid #aaa;
+    text-align: center;
+    line-height: 30px;
+    margin-left: 5px;
+}
+
+.community .inner .pagination .numbers{
+    float: left;
+    text-align: center;
+    font-size: 0;
+}
+
+.community .inner .pagination .numbers a{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    font: 13px/30px 'arial';
+    color: #666;
+    text-align: center;
+    margin: 0 3px;
+}
+
+.community .inner .pagination .numbers a:nth-of-type(1){
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.community .inner .pagination .numbers a:hover{
+    text-decoration: underline;
+}
+
+.community .inner .search{
+    text-align: center;
+    padding-top: 20px;
+    text-align: center;
+    width: 510px;
+    margin: 0 auto;
+}
+
+.community .inner .search input{
+    width: 100%;
+    border: 0;
+    border-bottom: 2px solid gray;
+    outline: 0;
+    font: normal 15px/1 '맑은 고딕';
+    color: #111;
+    padding: 7px 0;
+    box-sizing: border-box;
+    margin-left: -10px;
+}
+
+.community .inner .search button{
+    border: 0;
+    background: #fff;
+    margin-left: -30px;
+}
+
+/* tablet -------------------------------------------------- */
+@media screen and (max-width:1179px){
+    .community .sub_visual{
+        height: 300px;
+        background-image: url(../img/IMG_3521.JPG);
+        background-repeat:no-repeat; 
+        background-position:center center; 
+        background-size: cover; 
+    }
+
+    .content .inner .left{
+        float: none;
+    }
+
+    .content .inner .right{
+        float: none;
+        width: 100%;
+    }
+
+    .community .inner .right table th:nth-of-type(2){
+        width: 30%;
+    }
+
+    /* pagination */
+    
+    .community .inner .right .pagination{
+        width: 410px;
+    }
+
+    .community .inner .right .pagination .numbers a{
+        width: 20px;
+        height: 20px;
+    }
+
+    .community .inner .right .search{
+        width: 410px;
+    }
+
+
+}
+
+/* mobile -------------------------------------------------- */
+@media screen and (max-width:539px){
+    .content .inner .right h1 span{
+        margin-top: 20px;
+    }
+
+    .community .inner .right .pagination{
+        width: 230px;
+    }
+
+    .community .inner .right .search{
+        width: 230px;
+    }
+
+    .community .inner .right .pagination .numbers a:nth-of-type(n+4){
+        display: none;
+    }
+}

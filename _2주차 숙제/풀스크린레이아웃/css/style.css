@@ -1,0 +1,72 @@
+@charset "utf-8";
+@import 'reset.css';
+
+main{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/LaLaLand.jpeg);
+    background-repeat:no-repeat; 
+    background-position:center; 
+    background-size:cover; 
+    font-family: 'El Messiri', sans-serif;
+}
+
+main .absence{
+    position: absolute;
+    top: 15%;
+    left: 10%;
+    color: white;
+}
+
+main h1{
+    font-weight: bold;
+    font-size: 70px;
+    line-height: 1;
+    color: #fff;
+    position: absolute;
+    top: 20%;
+    left: 10%;
+}
+
+main .director{
+    position: absolute;
+    font-size: 10px;
+    color: white;
+    top: 30%;
+    left: 25%;
+}
+
+main .actor{
+    position: absolute;
+    top: 34%;
+    left: 15%;
+}
+
+main .actor::after{
+    content: ''; display: block; clear: both;
+}
+
+main .actor li{
+    float: left;
+    margin-right: 15px;
+}
+
+main .actor a{
+    color: #ffd26e;
+    text-decoration: none;
+}
+main .sns{
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+}
+
+main .sns li{
+    float: left;
+    margin-left: 20px;
+}
+
+main .sns li i{
+    font-size: 20px;
+    color: white;
+}

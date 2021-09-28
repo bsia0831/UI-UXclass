@@ -1,0 +1,150 @@
+@charset 'utf-8'; 
+@import "reset.css";
+.wrap{
+    width:340px;     
+    margin:50px auto; 
+    background-color:#fff; 
+    padding:30px; 
+    box-sizing:border-box; 
+    border-radius:10px; 
+    box-shadow:10px 10px 30px rgba(0,0,0,0.1); 
+}
+
+.wrap .menu{
+    width:100%;      
+}
+.wrap .menu::after{
+    content:''; display:block; clear:both; 
+}
+.wrap .menu a{
+    font-size:20px; 
+    color:#666; 
+}
+.wrap .menu a:nth-of-type(1){ 
+    float:left; 
+}
+.wrap .menu a:nth-of-type(2){
+    float:right; 
+}
+
+
+.wrap .profile{
+    width:100%; 
+}
+
+.wrap .profile .pic{
+    width:200px; 
+    height:200px; 
+    background:pink;  
+    border-radius:50%;   
+    margin:0 auto; 
+    margin-bottom:20px;   
+    background-repeat:no-repeat; 
+    background-position:center center;
+    background-size:cover;  
+    text-indent:-9999px;   
+}
+
+.wrap .profile h1{
+    font-weight:bold; 
+    font-size:22px; 
+    font-family:"arial"; 
+    line-height:1; 
+    color:#555;  
+    text-align:center;    
+    margin-bottom:5px; 
+}
+
+.wrap .profile p{
+    font-size:12px; 
+    font-family:"arial"; 
+    color:#bbb;   
+    text-align:center;   
+    margin-bottom:30px; 
+}
+
+.wrap .profile a{
+    display:block; 
+    width:180px; 
+    height:40px; 
+    font-size:12px; 
+    font-family:"arial"; 
+    line-height:40px; 
+    text-align:center;     
+    color:#fff; 
+    margin:0 auto; 
+    margin-bottom:20px; 
+    border-radius:20px;    
+}
+
+
+.wrap .contact {
+    width:100%; 
+    margin-bottom:25px;  
+}
+.wrap .contact li{
+    width:100%; 
+    border-bottom:1px solid #eee; 
+    padding:10px 20px; 
+    box-sizing:border-box; 
+}
+.wrap .contact li:last-child{
+    border-bottom:none; 
+}
+.wrap .contact li a{
+    display:inline-block; 
+    width:20px;
+    
+    text-align:center;   
+    margin-right:10px; 
+    font-size:15px; 
+    color:#555; 
+}
+
+.wrap .contact li span{
+    font-size:11px; 
+    font-family:"orbitron"; 
+    color:#555; 
+    letter-spacing:1px; 
+}
+
+.wrap .others{
+    width:100%;    
+    font-size:0; 
+    text-align:center; 
+}
+.wrap .others a{
+    display:inline-block; 
+    width:30px; 
+    height:30px; 
+    border-radius:50%; 
+    background-color:#ddd; 
+    margin:0px 10px; 
+    text-indent:-9999px;     
+    opacity:0.3; 
+}
+
+.wrap .others a:nth-of-type(1){
+    background-color:#35e0f7; 
+    box-shadow:5px 5px 10px rgba(53,224,247, 0.7); 
+}
+.wrap .others a:nth-of-type(2){
+    background-color:#55f5cd; 
+    box-shadow:5px 5px 10px rgba(85, 245,205, 0.7); 
+}
+.wrap .others a:nth-of-type(3){
+    background-color:#ff80df; 
+    box-shadow:5px 5px 10px rgba(255,128,223,0.7);
+}
+.wrap .others a:nth-of-type(4){
+    background-color:#a794fd; 
+    box-shadow:5px 5px 10px rgba(167, 148, 253, 0.7); 
+}
+
+/* 
+기본적으로 인라인요소들은 좌우배치될때 좌우기본간격이 있음 
+해당 간격이 margin:0px으로 수정안됨 
+--  해결방법 
+1)html에디터에서 태그줄바꿈없이 쓰기 
+2)부모요소에 font-size:0을 적용 
+*/

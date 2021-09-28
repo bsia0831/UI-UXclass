@@ -1,0 +1,25 @@
+*{
+    margin:0; padding:0;   
+}
+ul,ol,li{
+    list-style:none; 
+}
+a{
+    text-decoration:none; 
+}
+
+/* 
+filter 
+- blur : 요소의 흐림 효과 조절 
+- brightness : 요소의 밝기 조절 
+- contrast : 요소의 명도 대비 조절 
+- grayscale : 요소의 흑백 지정 
+- hue-rotate : 요소의 색상 단계를 조절 
+- invert : 요소의 색상 반전 단계 조절 
+- saturate : 요소의 채도 조절 
+- sepia : 요소의 갈색 톤 단계 조절 
+*/
+
+div img:nth-of-type(2){
+    filter:blur(3px); 
+}
