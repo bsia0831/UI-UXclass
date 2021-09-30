@@ -1,0 +1,117 @@
+@charset 'UTF-8'; 
+
+*{ margin:0px; padding:0px; box-sizing:border-box; }
+ul,ol,li{ list-style:none; }
+a{ text-decoration:none; }
+ 
+h1{
+    position:fixed; 
+    top:20px; 
+    left:30px; 
+    z-index:2; 
+}
+figure{
+    width:100%; 
+    height:100vh; 
+    position:absolute; 
+    top:0; 
+    left:0; 
+    overflow:hidden; 
+
+    .panel{
+        width:calc(100% * 5); 
+        height:100%; 
+        position:absolute; 
+        left:0; 
+        top:0; 
+
+        li{
+            width:calc(100% / 5); 
+            height:100%; 
+            float:left; 
+            position:relative; 
+            background-repeat:no-repeat; 
+            background-position:center; 
+            background-size:cover; 
+            background-attachment:fixed; 
+
+            &:nth-of-type(1){
+                background-image:url(../img/pic1.jpg); 
+            }
+            &:nth-of-type(2){
+                background-image:url(../img/pic2.jpg); 
+            }
+            &:nth-of-type(3){
+                background-image:url(../img/pic3.jpg); 
+            }
+            &:nth-of-type(4){
+                background-image:url(../img/pic4.jpg); 
+            }
+            &:nth-of-type(5){
+                background-image:url(../img/pic5.jpg); 
+            }
+
+            p{
+                font:30px/1 'arial'; 
+                color:#fff; 
+                text-shadow:1px 1px 1px #444; 
+                position:absolute; 
+                top:50%; 
+                margin-top:-15px; 
+                right:150px; 
+                opacity:0; 
+                transition:1s; 
+            }
+
+            &.on p{
+                opacity:1;  right:200px; 
+            }
+        }
+    }
+
+    .navi{
+        width:90%; 
+        position:absolute; 
+        left:5%; 
+        bottom:10vh; 
+        
+
+        li{
+            width:20%; height:40px;  
+            float:left; 
+            padding:0 20px; 
+            perspective:600px; 
+
+            a{
+                display:block; 
+                width:100%; 
+                height:100%; 
+                border:1px solid #333; 
+                border-radius:20px; 
+                font:14px/40px 'arial'; 
+                color:#333; 
+                text-align:center; 
+                transition:1s; 
+            }
+
+            &.on a{
+                background:rgba(0,0,0,0.5); 
+                color:#fff; 
+                transform:rotateY(360deg); 
+                font-weight:bold;
+            }
+        }
+    }
+
+    #circle{
+        position:fixed; 
+        top:50%; margin-top:-160px;  right:-160px; 
+        transition:1s; 
+
+        &.rot0{ transform:rotate(0deg); }
+        &.rot1{ transform:rotate(60deg); }
+        &.rot2{ transform:rotate(120deg); }
+        &.rot3{ transform:rotate(180deg); }
+        &.rot4{ transform:rotate(240deg); }
+    }
+}
