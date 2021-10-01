@@ -1,0 +1,109 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box; }
+
+ul, ol, li {
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+#header {
+  width: 100%;
+  background: #fff; }
+  #header .inner {
+    width: 1180px;
+    height: 100px;
+    margin: 0 auto;
+    position: relative; }
+    #header .inner h1 {
+      font: bold 18px/1 'arial';
+      color: #555;
+      position: absolute;
+      left: 0;
+      bottom: 20px; }
+
+#visual {
+  width: 100%;
+  background: hotpink; }
+  #visual .inner {
+    width: 1180px;
+    height: 100vh;
+    margin: 0 auto; }
+
+section {
+  width: 100%;
+  padding: 200px 0; }
+  section .inner {
+    width: 1180px;
+    min-height: 300px;
+    margin: 0 auto; }
+    section .inner h1 {
+      font: bold 15px/1 'arial';
+      color: #666;
+      text-align: center;
+      margin-bottom: 50px; }
+  section#brand {
+    background: #eee; }
+    section#brand .inner .wrap {
+      width: 100%; }
+      section#brand .inner .wrap::after {
+        content: '';
+        display: block;
+        clear: both; }
+      section#brand .inner .wrap article {
+        width: 280px;
+        height: 200px;
+        margin-right: 20px;
+        background: #444;
+        float: left;
+        transition: 0.5s;
+        opacity: 0;
+        transform: translateY(100px); }
+        section#brand .inner .wrap article:nth-of-type(1) {
+          transition-delay: 0s; }
+        section#brand .inner .wrap article:nth-of-type(2) {
+          transition-delay: 0.2s; }
+        section#brand .inner .wrap article:nth-of-type(3) {
+          transition-delay: 0.4s; }
+        section#brand .inner .wrap article:nth-of-type(4) {
+          transition-delay: 0.6s;
+          margin-right: 0; }
+    section#brand.on .inner .wrap article {
+      opacity: 1;
+      transform: translateY(0px); }
+
+#footer {
+  width: 100%;
+  padding: 80px 0;
+  border-top: 1px solid #bbb; }
+  #footer .inner {
+    width: 1180px;
+    min-height: 300px;
+    margin: 0 auto; }
+    #footer .inner p {
+      font: 14px/1 'arial';
+      color: #888;
+      letter-spacing: 2px;
+      text-align: center; }
+
+#navi {
+  position: fixed;
+  right: 50px;
+  top: 50%;
+  transform: translateY(-50%); }
+  #navi li {
+    margin: 20px 0; }
+    #navi li a {
+      display: block;
+      width: 10px;
+      height: 10px;
+      border-radius: 5px;
+      background: #888;
+      transition: 0.5s; }
+      #navi li a.on {
+        background: #111;
+        height: 60px; }
+
+/*# sourceMappingURL=style.css.map */

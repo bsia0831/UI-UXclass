@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+ul, ol, li {
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+section {
+  width: 100%;
+  height: 100vh;
+  background: url(../img/bg3.jpg) no-repeat center/cover fixed; }
+  section #tab {
+    width: 800px;
+    height: 400px;
+    border: 1px solid #000;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -400px;
+    margin-top: -200px;
+    background: rgba(0, 0, 0, 0.5); }
+    section #tab .menu {
+      width: 200px;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      position: relative; }
+      section #tab .menu #btns {
+        width: 100%;
+        position: absolute;
+        left: 0;
+        bottom: 30px; }
+        section #tab .menu #btns li a {
+          display: block;
+          width: 100%;
+          height: 40px;
+          font: bold 14px/40px 'arial';
+          color: #888;
+          padding-left: 60px;
+          box-sizing: border-box; }
+          section #tab .menu #btns li a.on {
+            background: rgba(0, 0, 0, 0.7);
+            color: yellow; }
+    section #tab .boxs > div {
+      width: 600px;
+      position: absolute;
+      right: 0;
+      top: 0;
+      height: 400px;
+      background: rgba(0, 0, 0, 0.1);
+      display: none; }
+      section #tab .boxs > div#tab1 {
+        display: block;
+        height: 400px; }
+      section #tab .boxs > div#tab2 {
+        height: 350px; }
+      section #tab .boxs > div#tab3 {
+        height: 300px; }
+      section #tab .boxs > div#tab4 {
+        height: 350px; }
+      section #tab .boxs > div span {
+        font: bold 100px/1 'arial';
+        color: #aaa;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%); }
+
+/*# sourceMappingURL=style.css.map */
