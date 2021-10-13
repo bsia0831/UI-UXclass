@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form validation</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script defer src="js/main.js"></script>
+</head>
+<body>
+    <section>
+        <form action="result.html" method="GET">
+            <fieldset>
+                <legend>MEMBERSHIP</legend>
+
+                <!-- 아이디 인증 -->
+                <article class="userid">
+                    <label for="userid">User ID</label>
+                    <input type="text" name="userid" id="userid" placeholder="아이디를 입력하세요">
+                </article>
+
+                <!-- 비밀번호 인증 -->
+                <article class="pwd">
+                    <label for="pwd1">Password</label>
+                    <input type="password" name="pwd1" id="pwd1" placeholder="비밀번호를 입력하세요">
+
+                    <label for="pwd2">Re Password</label>
+                    <input type="password" name="pwd2" id="pwd2" placeholder="비밀번호를 재입력하세요">
+                </article>
+            </fieldset>
+        </form>
+    </section>
+</body>
+</html>
