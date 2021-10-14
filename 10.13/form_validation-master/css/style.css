@@ -1,0 +1,94 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box; }
+
+ul, ol, li {
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+fieldset {
+  border: none; }
+
+input, a, select, option {
+  outline: 0; }
+
+body {
+  background: #e4faffe6; }
+
+section {
+  width: 600px;
+  background: #fff;
+  margin: 100px auto;
+  padding: 70px 50px 60px;
+  border-radius: 10px;
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.03); }
+  section form legend {
+    font: 45px/1 'roboto';
+    color: #555;
+    margin-bottom: 40px; }
+    section form legend::after {
+      content: '';
+      display: block;
+      width: 40px;
+      height: 1px;
+      background: #999;
+      margin-top: 20px; }
+  section form article {
+    padding: 15px 0; }
+    section form article label {
+      color: #999;
+      display: block;
+      margin-bottom: 10px; }
+    section form article input[type=text], section form article input[type=password], section form article select, section form article textarea {
+      width: 100%;
+      background: #f5ffff;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      margin-bottom: 10px;
+      padding: 10px;
+      color: skyblue;
+      resize: none;
+      transition: 1s; }
+      section form article input[type=text]::placeholder, section form article input[type=password]::placeholder, section form article select::placeholder, section form article textarea::placeholder {
+        color: skyblue; }
+      section form article input[type=text]:focus, section form article input[type=password]:focus, section form article select:focus, section form article textarea:focus {
+        background: #e6faff;
+        border: 1px solid #1aabff; }
+    section form article input[type=reset], section form article input[type=submit] {
+      width: 100%;
+      border: none;
+      margin-bottom: 10px;
+      padding: 15px;
+      font: bold 12px/1 'arial';
+      color: #fff;
+      background: linear-gradient(45deg, #c5c5c5, #818181);
+      box-shadow: 3px 6px 10px rgba(0, 0, 0, 0.1);
+      border-radius: 4px;
+      letter-spacing: 1px;
+      opacity: 0.5;
+      transition: 0.5s;
+      cursor: pointer; }
+      section form article input[type=reset]:hover, section form article input[type=submit]:hover {
+        opacity: 1;
+        transform: scale(1.05);
+        background: linear-gradient(30deg, #52f9ff, #25b9fd); }
+    section form article.hobby h2, section form article.gender h2 {
+      font: normal 16px/1 'arial';
+      color: #888;
+      margin-bottom: 10px; }
+    section form article.hobby label, section form article.gender label {
+      display: inline-block;
+      color: skyblue; }
+    section form article.hobby input, section form article.gender input {
+      margin-right: 6px; }
+  section form p {
+    font: 12px/1 "맑은 고딕";
+    color: hotpink;
+    margin-bottom: 10px; }
+
+/*# sourceMappingURL=style.css.map */

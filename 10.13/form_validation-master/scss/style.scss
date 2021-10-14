@@ -1,0 +1,96 @@
+@charset 'UTF-8'; 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+@import 'reset.scss'; 
+ 
+body{
+   background:#e4faffe6; 
+}
+
+section{
+   width:600px; background:#fff; margin:100px auto; 
+   padding:70px 50px 60px; 
+   border-radius:10px; box-shadow:10px 10px 30px rgba(0,0,0,.03); 
+
+   form{
+      legend{
+         font:45px/1 'roboto'; 
+         color:#555; 
+         margin-bottom:40px; 
+
+         &::after{
+            content:''; 
+            display:block; 
+            width:40px; height:1px; background:#999; 
+            margin-top:20px; 
+         }
+      }
+
+      article{
+         padding:15px 0; 
+
+         label{
+            color:#999; 
+            display:block; 
+            margin-bottom:10px; 
+         }
+
+         //입력양식 스타일링  
+         input[type=text], input[type=password], select, textarea{
+            width:100%; 
+            background:#f5ffff; border:1px solid #ddd; 
+            border-radius:4px; 
+            margin-bottom:10px; padding:10px;  
+            color:skyblue; resize:none; 
+            transition:1s; 
+
+            &::placeholder{ color:skyblue; }
+            &:focus{
+               background:#e6faff; 
+               border:1px solid #1aabff; 
+            }
+         }
+
+         //버튼 스타일
+         input[type=reset], input[type=submit]{
+            width:100%; 
+            border:none; 
+            margin-bottom:10px; 
+            padding:15px; 
+            font:bold 12px/1 'arial'; color:#fff; 
+            background:linear-gradient(45deg, #c5c5c5, #818181); 
+            box-shadow:3px 6px 10px rgba(0,0,0,.1); 
+            border-radius:4px; 
+            letter-spacing:1px; 
+            opacity:0.5; transition:0.5s; 
+            cursor:pointer; 
+
+            &:hover{
+               opacity:1; 
+               transform:scale(1.05); 
+               background:linear-gradient(30deg, #52f9ff, #25b9fd);
+            }
+         }
+
+         //체크박스, 라디오 버튼 
+         &.hobby, &.gender{
+            h2{
+               font:normal 16px/1 'arial'; 
+               color:#888; 
+               margin-bottom:10px; 
+            }
+            label{
+               display:inline-block;  color:skyblue; 
+            }
+            input{ margin-right:6px; }
+         }
+      }
+
+      //에러 메시지 스타일 
+      p{
+         font:12px/1 "맑은 고딕"; 
+         color:hotpink; 
+         margin-bottom:10px; 
+      }
+   }
+}
