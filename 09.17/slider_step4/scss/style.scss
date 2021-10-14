@@ -11,7 +11,7 @@ a{ text-decoration:none; }
     margin:100px auto; 
     position:relative; 
     overflow:hidden; 
-    
+
     .list{
         width: calc(100% * 4); /* 400% = 2000px */
         height:100%; 
@@ -39,6 +39,12 @@ a{ text-decoration:none; }
             &[data-index="4"]{
                 background:lightgreen; 
             }
+            &[data-index="5"]{
+                background:orangered; 
+            }
+            &[data-index="6"]{
+                background:tan; 
+            }
             
         }
     }
@@ -55,4 +61,31 @@ a{ text-decoration:none; }
         margin-top:-50px; 
         right:50px; 
     }
+
+   
+}
+
+.controls{
+    position:absolute; 
+    right:100px; 
+    bottom:150px; 
+
+    li{
+        float:left; 
+        margin-left:20px; 
+
+        a{
+            display:inline-block; 
+            font-size:20px; 
+            color:#999; 
+            transition:0.5s; 
+
+            &.on{
+                color:#333; 
+                transform:scale(1.5); 
+            }
+             
+        }
+    }
+
 }

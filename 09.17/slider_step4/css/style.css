@@ -39,6 +39,10 @@ a {
         background: aqua; }
       #slider .list li[data-index="4"] {
         background: lightgreen; }
+      #slider .list li[data-index="5"] {
+        background: orangered; }
+      #slider .list li[data-index="6"] {
+        background: tan; }
   #slider .prev {
     position: absolute;
     top: 50%;
@@ -49,5 +53,21 @@ a {
     top: 50%;
     margin-top: -50px;
     right: 50px; }
+
+.controls {
+  position: absolute;
+  right: 100px;
+  bottom: 150px; }
+  .controls li {
+    float: left;
+    margin-left: 20px; }
+    .controls li a {
+      display: inline-block;
+      font-size: 20px;
+      color: #999;
+      transition: 0.5s; }
+      .controls li a.on {
+        color: #333;
+        transform: scale(1.5); }
 
 /*# sourceMappingURL=style.css.map */
