@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>swiper cube</title>
+    <script src="https://kit.fontawesome.com/6e561f56c7.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="js/main.js"></script>
+</head>
+<body>
+    <div class="wrap">
+
+        <h1>UI/UX <span>PORTFOLIO</span></h1>
+
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="inner">
+                    <div class="con">
+                        <img src="img/pic1.png">
+                        <h2>Lorem ipsum dolor sit.</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="inner">
+                    <div class="con">
+                        <img src="img/pic2.png" alt="">
+                        <h2>Lorem ipsum dolor sit amet.</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, consequatur?</p>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="inner">
+                    <div class="con">
+                        <img src="img/pic3.png" alt="">
+                        <h2>Lorem, ipsum dolor.</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="inner">
+                    <div class="con">
+                        <img src="img/pic4.png" alt="">
+                        <h2>Lorem ipsum dolor sit.</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="inner">
+                    <div class="con">
+                        <img src="img/pic5.png" alt="">
+                        <h2>Lorem ipsum dolor sit amet.</h2>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et, culpa?</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 좌우버튼-->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+
+        <!-- 페이징버튼 -->
+        <div class="swiper-pagination"></div>
+
+        <!-- 재생/정지 버튼 -->
+        <ul class="auto">
+            <li class="btnStart">
+                <i class="fas fa-play"></i>
+            </li>
+            <li class="btnStop">
+                <i class="fas fa-pause"></i>
+            </li>
+        </ul>
+    </div>
+
+<script>
+const swiper = new Swiper('.wrap', {
+   //좌우버튼 옵션
+   navigation :{
+       nextEl :".swiper-button-next", 
+       prevEl :".swiper-button-prev" 
+   }, 
+   //페이징 버튼 옵션 
+   pagination :{
+       el : ".swiper-pagination", 
+       type : "fraction" //현재슬라이드/전체슬라이드수
+   }, 
+   loop: true, //순환여부 결정 
+   speed : 500, //슬라이딩 속도 
+   direction : "horizontal", //슬라이딩 방향 vertical:세로 
+   spaceBetween : 0, //사이간격( 숫자 px )
+   slidesPerView : "auto", // 하나의 화면당 보일 패널의 갯수 
+   centeredSlides : true, //활성화 슬라이드를 화면 가운데 배치
+   grabCursor : true, //마우스 커서 모양 변경 
+   //자동롤링 
+   autoplay :{
+       delay:1000, 
+       disableOnInteraction : true 
+       //false : 롤링중에 스와이프되더라도 계속 롤링 
+       //true : 롤링중에 스와이프되면 롤링 중지 
+   },
+   effect: "coverflow",  //cube 효과         
+    coverflowEffect: {
+         rotate : 50, //슬라이드 회전 각도 
+         stretch : -100, //슬라이드 간 거리, 클수록 많이 겹침 
+         depth : 400, //깊이 효과값 
+         modifier : 1, //효과 배수 
+         slideShadows : false, //슬라이더 그림자 
+    },
+});
+
+var btnStart = document.querySelector(".btnStart"); 
+var btnStop = document.querySelector(".btnStop"); 
+
+swiper.autoplay.stop(); 
+
+btnStart.onclick = function(){
+    swiper.autoplay.start(); 
+}
+btnStop.onclick = function(){
+    swiper.autoplay.stop(); 
+}
+
+</script>
+</body>
+</html>
