@@ -1,0 +1,60 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box; }
+
+ul, ol, li {
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+fieldset {
+  border: none; }
+
+section {
+  width: 600px;
+  margin: 50px auto;
+  padding: 70px 50px 60px; }
+  section form legend {
+    font: 45px/1 'arial';
+    color: #555;
+    margin-bottom: 50px; }
+  section form article {
+    padding: 15px 0; }
+    section form article label {
+      color: #999;
+      display: block;
+      margin-bottom: 10px; }
+    section form article input[type=text], section form article input[type=password], section form article select, section form article textarea {
+      width: 100%;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      background: #f5ffff;
+      padding: 10px;
+      margin-bottom: 10px;
+      color: skyblue;
+      resize: none;
+      transition: 1s; }
+    section form article input[type=reset], section form article input[type=submit] {
+      width: 100%;
+      border: none;
+      margin-bottom: 10px;
+      padding: 15px;
+      font: bold 12px/1 'arial';
+      color: #fff;
+      background: #666;
+      cursor: pointer;
+      transition: 0.5s; }
+      section form article input[type=reset]:hover, section form article input[type=submit]:hover {
+        background: skyblue;
+        transform: scale(1.05); }
+    section form article.hobby h2, section form article.gender h2 {
+      font: normal 16px/1 'arial';
+      color: #888;
+      margin-bottom: 10px; }
+    section form article.hobby label, section form article.gender label {
+      display: inline-block;
+      color: skyblue; }
+
+/*# sourceMappingURL=style.css.map */
