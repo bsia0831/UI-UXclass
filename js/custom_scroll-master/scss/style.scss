@@ -1,0 +1,80 @@
+@charset "UTF-8";
+
+* {
+   margin: 0px; padding: 0px; box-sizing: border-box;
+}
+ul, ol {
+   list-style: none;
+}
+a {
+   text-decoration: none;
+}
+
+section {
+   width: 100%; position: relative; overflow: hidden;
+
+   &#box1 {
+      height: 1300px; background: #ddd;
+
+      .obj1 {
+         width: 1200px; height: 1200px; background: aqua;
+         position: absolute; top: 50%; left: 50%; margin-left: -600px; margin-top: -600px;
+         transform: rotate(45deg);
+      }
+   }
+   &#box2 {
+      height: 2000px; background: #aaa;
+
+      .inner {
+         width: 100%; height: 100%;
+         background: url(../img/bg.jpg) no-repeat  center/cover fixed;
+      }
+      h1 {
+         font: bold 100px/1 "arial"; color: #000;
+         position: fixed; top: 30%; left: 100px; opacity: 0;
+      }
+      .obj2 {
+         width: 0px; height: 2px; background: #000;
+         position: fixed; top: 50%; left: 100px;
+      }
+   }
+   &#box3 {
+      height: 1500px; background: #888;
+
+      .obj3 {
+         width: 400px; height: 400px; background: hotpink;
+         position: absolute; top: 50%; left: 50%; margin-top: -200px; margin-left: -200px; opacity: 0; transform: scale(2);
+      }
+   }
+   &#box4 {
+      height: 1600px; background: #555; display: flex;
+      justify-content: center; align-items: flex-start; padding-top: 100px;
+
+      article {
+         width: 800px;   
+
+         path {
+            transform: scale(0.95);
+            transform-origin: center;
+            fill: transparent;
+            stroke: #000;
+            stroke-width: 2;
+            stroke-dasharray: 990;
+            stroke-dashoffset: 990;
+         }
+      }
+   }
+
+   &#box5 {
+      height: 3000px; background: #111; position: relative;
+      padding: 150px; overflow: hidden;
+      display: flex; justify-content: space-around;
+
+      .obj5_1 {
+         width: 500px; height: 500px; background: aqua; position: relative;
+      }
+      .obj5_2 {
+         width: 500px; height: 500px; background: hotpink; position: relative; top: 200px;
+      }
+   };
+}
