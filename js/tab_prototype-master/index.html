@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>tab prototype</title>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+   <link rel="stylesheet" href="style.css">
+   <script defer src="tab.js"></script>
+   <script>
+      $(document).ready(function(){
+         new Tab("#tab"); 
+      }); 
+   </script>
+</head>
+<body>
+   <div id="tab">
+      <ul>
+         <li class="on"><a href="#box1">button1</a></li>
+         <li><a href="#box2">button2</a></li>
+         <li><a href="#box3">button3</a></li>
+      </ul>
+      <div id="box1">BOX1</div>
+      <div id="box2">BOX2</div>
+      <div id="box3">BOX3</div>
+
+   </div>
+</body>
+</html>
