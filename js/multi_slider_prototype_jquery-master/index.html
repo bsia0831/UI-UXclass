@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>multi slider prototype</title>
+   <link rel="stylesheet" href="css/style.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+   <script src="js/main.js"></script>
+   <script>
+      $(document).ready(function(){
+         new Slider("#slider1", {
+            
+            speed : 500
+         }); 
+         new Slider("#slider2");
+      });
+   </script>
+</head>
+<body>
+   <!-- 
+      es6 클래스 방식으로 변환 순서 
+      1. 먼저 class 생성자명{ } 로 전체 코드 묶음 
+      2. class 안쪽에 constructor 생성해서 initDOM, bindingEvent 호출 
+      3. 프로토타입에 등록하는 메서드를 모드 class안쪽에 함수명(){ } 형식으로 등록 
+      4. 모든 익명함수를 화살표함수로 변경하면 .bind(this) 호출 필요없음 
+
+    -->
+   <section id="slider1">
+      <ul>
+         <li data-index="1"></li>
+         <li data-index="2"></li>
+         <li data-index="3"></li>
+      </ul>      
+   </section>
+   <section id="slider2">
+      <ul>
+         <li data-index="1"></li>
+         <li data-index="2"></li>
+         <li data-index="3"></li>
+      </ul>      
+   </section>
+
+   <a href="#" class="prev"></a>
+   <a href="#" class="next"></a>
+</body>
+</html>
