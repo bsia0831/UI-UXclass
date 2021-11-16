@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form validation</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script defer src="js/myForm.js"></script>
+    <script>
+        $(document).ready(function(){
+            new MyForm("#myForm",[
+                {
+                    type : "text",
+                    name : "userid", 
+                    len : 5
+                },
+                {
+                    type : "text", 
+                    name : "comments", 
+                    len : 20
+                },
+                {
+                    type : "email", 
+                    name :"email"
+                },
+                {
+                    type : "check", 
+                    name : "gender"
+                }, 
+                {
+                    type : "check", 
+                    name : "hobby"
+                }, 
+                {
+                    type :"select", 
+                    name : "edu"
+                }, 
+                {
+                    type :"password", 
+                    name : ["pwd1", "pwd2"], 
+                    len : 5
+                }
+
+            ]) 
+        });
+    </script>
+</head>
+<body>
+     
+    <section>
+        <form action="result.html" method="get" id="myForm">
+            <fieldset>
+                <legend>MEMBERSHIP</legend>
+
+                <!-- 아이디 인증 -->
+                <article class="userid">
+                    <label for="userid">User ID</label>
+                    <input type="text" name="userid" id="userid" placeholder="아이디를 입력하세요">
+                </article>
+
+                <!-- 비밀번호 인증  -->
+                <article class="pwd">
+                    <label for="pwd1">Password</label>
+                    <input type="password" name="pwd1" id="pwd1" placeholder="비밀번호를 입력하세요">
+
+                    <label for="pwd2">Re Password</label>
+                    <input type="password" name="pwd2" id="pwd2" placeholder="비밀번호를 재입력하세요">
+                </article>
+
+                <!-- 이메일 인증 -->
+                <article class="email">
+                    <label for="email">E-mail</label>
+                    <input type="text" name="email" id="email" placeholder="이메일 아이디를 입력하세요">
+                </article>
+
+                <!-- 셀렉박스 인증  -->
+                <article class="edu">
+                    <label for="edu">Education</label>
+                    <select name="edu" id="edu">
+                        <option value="">최종학력을 선택해주세요</option>
+                        <option value="elementary">초등학교 졸업</option>
+                        <option value="middle">중학교 졸업</option>
+                        <option value="high">고등학교 졸업</option>
+                        <option value="college">전문대학 졸업</option>
+                        <option value="university">4년제 대학 졸업</option>
+                    </select>
+                </article>
+                <!-- 라디오버튼 인증  -->
+                <article class="gender">
+                    <h2>Gender</h2>
+                    <label for="male">male</label>
+                    <input type="radio" name="gender" id="male" value="male">
+
+                    <label for="female">female</label>
+                    <input type="radio" name="gender" id="female" value="female">
+                </article>
+
+                <!-- 체크박스 인증  -->
+                <article class="hobby">
+                    <h2>Hobby</h2>
+                    <label for="sports">Sports</label>
+                    <input type="checkbox" name="hobby" id="sports" value="sports">
+
+                    <label for="game">Game</label>
+                    <input type="checkbox" name="hobby" id="game" value="game">
+
+                    <label for="music">Music</label>
+                    <input type="checkbox" name="hobby" id="music" value="music">
+                </article>
+
+                <!-- 텍스트박스 인증  -->
+                <article class="comments">
+                    <label for="comments">Leave Message</label>
+                    <textarea name="comments" id="comments" cols="30" rows="10" placeholder="메시지를 남겨주세요"></textarea>
+                </article>
+
+                <!-- 전송버튼  -->
+                <article class="btns">
+                    <input type="reset" value="CANCEL">
+                    <input type="submit" value="CONFIRM">
+                </article>
+            </fieldset>
+        </form>
+    </section>
+</body>
+</html>
