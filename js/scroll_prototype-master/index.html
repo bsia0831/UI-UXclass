@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>scroll prototype</title>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+   <link rel="stylesheet" href="css/style.css">
+   <script defer src="js/scroll.js"></script>
+   <script>
+      $(document).ready(function(){
+         new MyScroll({
+            panel :"section", 
+            btns : "#navi li", 
+            base : -300 
+         }); 
+      })
+   </script>
+</head>
+<body>
+   <main>
+      <section id="box1"></section>
+      <section id="box2">
+         <article></article>
+         <article></article>
+         <article></article>
+         <article></article>
+      </section>
+      <section id="box3"></section>
+      <section id="box4"></section>
+   </main>
+
+   <ul id="navi">
+      <li><a href="#box1" class="on"></a></li>
+      <li><a href="#box2"></a></li>
+      <li><a href="#box3"></a></li>
+      <li><a href="#box4"></a></li>
+   </ul>
+</body>
+</html>
