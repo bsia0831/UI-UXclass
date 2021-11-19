@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>es5 prototype</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<link rel="stylesheet" href="css/style.css">
+	<script defer src="custom.js"></script>
+	<script>
+		$(document).ready(function(){
+			 new Youtube({
+				frame : ".vidGallery",
+				playList : "PLYOPkdUKSFgX5CgKf68RJzJHec0XEdBNd",
+				key : "AIzaSyCbARLbftvbPSX5cjABTy1LZpet3RVkrh4",	
+				num : 4	
+			});
+
+			new Youtube({
+				frame : ".vidGallery2",
+				playList: "PLYOPkdUKSFgXiJXlCnCmIoeK_QReBgOlu",
+				key : "AIzaSyCbARLbftvbPSX5cjABTy1LZpet3RVkrh4",
+				num : 4
+			})
+			
+		})
+	</script>
+</head>
+<body>
+	<div class="vidGallery">
+		<!--
+		<article>
+			<a href="유튜브아이디">
+				<img src="유튜브 썸네일주소">
+			</a>
+			<div class="con">
+				<h2>영상제목</h2>
+				<p>영상본문</p>
+				<span>업로드 날짜</span>
+			</div>
+		</article>
+		-->
+	</div>
+
+	<div class="vidGallery2">
+	</div>
+
+	<!--
+	<div class="pop">
+		<iframe src="유튜브영상주소" frameborder="0"></iframe>
+		<span>닫기버튼</span>
+	</div>
+	-->
+</body>
+</html>
+
