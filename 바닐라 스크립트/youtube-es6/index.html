@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youtube API</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="js/youtube.js"></script>  
+    <script>
+        window.addEventListener("load",()=>{
+            new Youtube("main", {
+                api_key: "AIzaSyB7VIAECTixPlj0sr-goHwkmNRFIwxZntA",
+                playList: "PLYOPkdUKSFgX5CgKf68RJzJHec0XEdBNd",
+                count: 4
+            });
+        })
+    </script>
+</head>
+<body>
+    <main>
+
+    </main>
+</body>
+</html>
