@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px; padding: 0px; box-sizing: border-box;
+}
+ul, ol, li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+table, td, th {
+    border-collapse: collapse;
+    border:none;
+}
+
+#content {
+    padding: 100px 0px;
+
+    .inner {
+        width: 1180px; margin: 0px auto;
+
+        table {
+            width: 100%; border-top: 2px solid #555; 
+
+            th {
+                border-bottom: 2px solid #555; height: 40px;
+            }
+
+            td {
+                border-bottom: 1px solid #888; height: 40px;
+                text-align: center; padding-left: 10px;
+
+                &:nth-of-type(2) { text-align: left;}
+            }
+        }
+    }
+}
