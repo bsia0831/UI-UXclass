@@ -1,15 +1,14 @@
 import './css/style.css';
-import {Logo, Menu} from './components/Layout';
-import Footer from './components/Footer';
 
 function App() {
 	return (
-		<figure>
-			<Logo />
-			<Menu />			
-			
-			<Footer />
-		</figure>
+		<div className="App">
+			<ul className="btns">
+				<li>button1</li>
+				<li>button2</li>
+				<li>button3</li>
+			</ul>
+		</div>
 	);
 }
 
