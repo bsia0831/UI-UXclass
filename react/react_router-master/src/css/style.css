@@ -1,0 +1,51 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box; }
+
+ul, ol {
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+header {
+  width: 100%;
+  background: #333;
+  display: flex;
+  height: 100px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 4vw; }
+  header h1 {
+    font-size: 0; }
+    header h1 a {
+      font: bold 24px/1 "arial";
+      color: #fff; }
+  header #gnb {
+    display: flex; }
+    header #gnb a {
+      display: inline-block;
+      padding: 12px 30px;
+      font: bold 14px/1 "arial";
+      color: #ddd; }
+
+footer {
+  width: 100%;
+  height: 80px;
+  border-top: 1px solid #ddd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font: 12px/1 "arial";
+  color: #888;
+  letter-spacing: 2px; }
+
+main {
+  padding: 100px 6vw; }
+  main h1 {
+    font: bold 24px/1 "arial";
+    color: #444;
+    margin-bottom: 20px; }
+
+/*# sourceMappingURL=style.css.map */
